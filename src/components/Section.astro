@@ -1,0 +1,1053 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+---
+
+<section class="aboutboxes aboutsection" id='about'>
+    <div class="aboutinfo">
+        <div class="aboutbox shodha">
+            <ul class="aboutinbox">
+                <span class='aboutcount' data-val="90">00</span>
+                <span class="abouttext">sm kalpa</span>
+            </ul>
+        </div>
+        
+        <div class="aboutbox tejas">
+            <ul class="aboutinbox">
+                <span class='aboutcount' data-val="21">00</span>
+                <span class="abouttext">sm tejas</span>
+            </ul>
+        </div>
+        
+        <div class="aboutbox kalpa">
+            <ul class="aboutinbox">
+                <span class='aboutcount' data-val="08">00</span>
+                <span class="abouttext">sm shodha</span>
+            </ul>
+        </div>
+        
+        <div class="aboutbox daksha">
+            <ul class="aboutinbox">
+                <span class='aboutcount' data-val="42">00</span>
+                <span class="abouttext">sm daksha</span>
+            </ul>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="aboutabout">
+        <div class="aboutabout-info text-justify">
+                <p>About Us</p>
+                <div class="aboutflex">    
+                    <div class="aboutabout-div">Samarth Meditech is the brainchild of 2 young Engineering graduates. Under the mentorship of Mr Nayak, a Meditech industry veteran with 30 yrs experience and Mr. Purohit, a Solutions Architect, Samarth Meditech set out to develop new age applications for the Medical, Pharma and Healthcare industries.<br/><br/>
+                        We spent a considerable amount of time talking to and working with Industry Experts, Medicine Practitioners, Hospital Management, Chartered Accountants and the on the floor staff isolating pain points and challenges.A host of unique features that will save time, efforts, retain customers and plug the leakages have been added to the Apps after.<br/> <br/>The technology platforms chosen bring the advantages and flexibility of the next generation technologies into your everyday life making every product of Samarth Meditech highly efficient.</div>
+            
+                </div>
+        </div>
+        
+    </div>
+</section>
+<section class="aboutenable">
+    <div ><p class="p">Samarth Meditech confers</p></div>
+    <div class="aboutconfer">
+        <div class="aboutconfer-box">
+            <img class='aboutconfer-img  ' src="assets/seamless.png" alt="" >
+            <hr class='aboutunderline'>
+            <h1 class="aboutcapitalize">seamless service</h1>
+            <p>Medical/Healthcare business grow by controlling cost and maximizing profits at the same time by keeping the customers happy . For this Samarth Meditech provides seamless services</p>
+        </div>
+        <div class="aboutconfer-box">
+            <img class='aboutconfer-img ' src="assets/reduce_time.png" alt="">
+            <hr class='aboutunderline'>
+            <h1 class="aboutcapitalize">reduce service time</h1>
+            <p>Samarth Meditech Applications helps you put processes in place no matter how small the business that can reduce service time and even give full patient/ customer history in a click</p>
+        </div>
+        <div class="aboutconfer-box">
+            <img class='aboutconfer-img ' src="assets/personalised.png" alt="">
+            <hr class='aboutunderline'>
+            <h1 class="aboutcapitalize">personalized service</h1>
+            <p>Samarth Meditech make applications that are truly personalized like using messaging features for reminders, thank you messages and many more.</p>
+        </div>
+        <div class="aboutconfer-box">
+            <img class='aboutconfer-img ' src="assets/responsive.png" alt="">
+            <hr class='aboutunderline'>
+            <h1 class="aboutcapitalize">highly responsive solutions</h1>
+            <p>Pain points and challenges are isolated by working with Industry Experts, Medicine Practitioners, hence Samarth Meditech applications come up with highly responsive solutions</p>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .aboutsection{
+     background: var(--background);
+    }
+    
+    .aboutinfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width:90vw;
+        color: var(--white);
+        text-transform: uppercase;
+    }
+    .aboutboxes{
+        height: 13vw;
+        width: 99vw;
+    }
+    .aboutbox {
+        width: 15vw; 
+        transition: transform 0.6s ease-in-out;
+        background: var(--main-color);
+        border-bottom:1vw solid var(--sub-color) ;
+        border-radius: 2vw;
+    }
+    .aboutinbox{
+        display: flex;
+        flex-direction: column;  
+    }
+    .aboutcount{
+        color: var(--sub-color);
+        font-size: 5vw;
+        font-family: var(--crimson);
+    }
+    .abouttext{
+        margin-bottom: 3vw;
+        font-size: 1vw;
+        font-family: var(--ubuntu);
+    }
+    .aboutabout {
+        height: 50vw;
+    }
+    .aboutabout-info {
+        width: 100vw;
+        height: 36vw;
+        background:var(--main-color);
+        color: var(--white-grey);
+        padding-top: 2vw;   
+    }
+    .aboutabout-info>p{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 3.5vw;
+
+    }
+    .aboutabout-div{
+        font-family: var(--ubuntu);
+        width: 50vw;
+        font-weight: 200;
+        padding-top: 1vw;
+        font-size: 1.3vw;
+    }
+
+    .aboutenable {
+        height: 70vw;
+    }
+    .aboutenable p{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 4vw;
+        text-align: center;
+    }
+    .aboutconfer{
+        margin-left: 13vw;
+        margin-right: 12vw;
+        height: 40vw;
+        margin-top: 2vw;
+    }
+    .aboutconfer-box{
+        height: 18vw;
+        width: 36vw;
+        font-family: var(--poppins);
+        font-size: 1.5vw;
+        font-weight:500;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        padding-top: 1.7vw; 
+        box-shadow: 0 0 0 0 black;
+        transition: transform 0.5s , box-shadow 0.7s;
+
+    }
+    .aboutconfer-box:hover{
+        transform: scale(1.05);
+        box-shadow: 0  0 0.6vw black;
+    }
+
+    .aboutunderline{
+        width: 5vw;
+        height: 0.5vw;
+        background-color: var(--sub-color);
+        border-radius: 1vw;
+        margin-top: 0.9vw;
+        margin-bottom: 0.9vw;
+    }
+    .aboutconfer-box p{
+        font-size: 1.2vw;
+        text-align: justify;
+        font-weight: 200;
+        font-family: var(--ubuntu); 
+    }
+    .aboutconfer-img{
+        width: 4vw;
+        height: 3.5vw;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (min-width:100px) and (max-width:400px){
+        .aboutboxes{
+            padding-top: 2vw;
+            height: 80vw;
+            width: 99vw;
+            padding: 15px 0 15px 0;
+        }
+        .aboutinfo {
+            margin-left: 14vw;
+            padding-top: 15vw;
+            padding-bottom: 5vw;
+            padding-left: 2vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2vw;
+            width:70vw;
+            color: var(--white);
+            text-transform: uppercase;
+            background: var(--background);
+            
+        }
+        .aboutbox {
+            width: 30vw;
+            height: 25vw; 
+            transition: transform 0.6s ease-in-out;
+            background: var(--main-color);
+            border-bottom:2vw solid var(--sub-color) ;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .aboutinbox{
+            display: flex;
+            flex-direction: column;  
+        }
+        .aboutcount{
+            margin-top: 3vw;
+            color: var(--sub-color);
+            font-size:10vw;
+            font-family: var(--crimson);
+        }
+        .abouttext{
+            transform: translateY(-1vw);
+            font-size: 4vw;
+            font-family: var(--poppins);
+        }
+        .aboutabout {
+            width: 100vw;
+            height: 95vw;
+            background: var(--background);
+        }
+        .aboutabout-info {
+            width: 100vw;
+            height: 90vw;
+            background:var(--main-color);
+            color: var(--white-grey);
+            padding-left: 3vw;
+            padding-top: 1vw;
+        
+            
+        }
+        .aboutabout-info>p{
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 6vw;
+            padding-left: 2vw;
+
+        }
+        .aboutabout-div{
+            font-family: var(--ubuntu);
+            padding-left: 2vw;
+            width: 87vw;
+            height: 70vw;
+            font-weight: 200;
+            font-size: 3vw;
+            text-align: justify;
+        }
+        .aboutabout-image {
+            display: none;
+            
+        }
+        .aboutenable {
+            height: 170vw;
+            width: 100vw;
+            background: var(--background);
+        }
+        .aboutenable .p{
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 6.3vw;
+            text-align: center;
+            padding-top: 2vw;
+        }
+        .aboutconfer{
+            margin-left: 13vw;
+            margin-right: 12vw;
+            height: 85%;
+            margin-top: 2vw;
+        }
+        .aboutconfer-box{
+            height: 34vw;
+            width:72vw;
+            font-family: var(--poppins);
+            font-size: 3.2vw;
+            font-weight:500;
+            text-transform: capitalize; 
+            padding-left: 1.5vw;
+            padding-right: 1.5vw;
+            padding-top: 1.7vw;
+            box-shadow: 0 0 0 0 black;
+            transition: transform 0.5s , box-shadow 0.7s;
+            margin-bottom: 3vw;
+
+        }
+        .confer-box:hover{
+            transform: scale(1.05);
+            box-shadow: 0  0 0.6vw black;
+        }
+        
+        .aboutunderline{
+            width: 12vw;
+            height: 0.5vw;
+            background-color: var(--sub-color);
+            border-radius: 1vw;
+            margin-top: 0.9vw;
+            margin-bottom: 0.9vw;
+        }
+        .aboutconfer-box p{
+            font-size: var(--content100);
+            text-align: justify;
+            font-weight: 300;
+            font-family: var(--poppins);
+            transform: translateY(-5vw);
+            text-transform: none;
+        }
+        .aboutconfer-box h1{
+            position: relative;
+            top:-13vw;
+            left:15vw;
+            font-size: 4vw;
+            width: 58vw;
+        }
+        .aboutconfer-img{
+            height: 10vw;
+            width: 10vw;
+        }        
+    }
+    @media (min-width:400px) and (max-width:700px){
+        .aboutboxes{
+        height: 80vw;
+        width: 99vw;
+        padding: 5vw 0 2vw 0;
+    }
+    .aboutinfo {
+        margin-left: 14vw;
+        padding-top: 10vw;
+        padding-bottom: 6vw;
+        padding-left: 2vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vw;
+        width:70vw;
+        color: var(--white);
+        text-transform: uppercase;
+        background: var(--background);
+        
+    }
+    .aboutbox {
+        width: 30vw;
+        height: 25vw; 
+        transition: transform 0.6s ease-in-out;
+        background: var(--main-color);
+        border-bottom:2vw solid var(--sub-color) ;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .aboutinbox{
+        display: flex;
+        flex-direction: column;  
+    }
+    .aboutcount{
+        margin-top: 3vw;
+        color: var(--sub-color);
+        font-size:10vw;
+        font-family: var(--crimson);
+    }
+    .abouttext{
+        transform: translateY(-1vw);
+        font-size: 4vw;
+        font-family: var(--poppins);
+    }
+    .aboutabout {
+        width: 100vw;
+        height: 115vw;
+        background: var(--background);
+    }
+    .aboutabout-info {
+        width: 100vw;
+        height: 110vw;
+        background:var(--main-color);
+        color: var(--white-grey);
+        padding-left: 3vw;
+        padding-top: 1vw;
+    
+        
+    }
+    .aboutabout-info>p{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 6vw;
+        padding-left: 2vw;
+
+    }
+    .aboutabout-div{
+        font-family: var(--ubuntu);
+        padding-left: 2vw;
+        width: 87vw;
+        height: 70vw;
+        font-weight: 200;
+        font-size: 3.2vw;
+        text-align: justify;
+    }
+    .aboutabout-image {
+        display: none;
+        
+    }
+    .aboutenable {
+        height: 185vw;
+        width: 100vw;
+        background: var(--background);
+    }
+    .aboutenable .p{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 6.3vw;
+        text-align: center;
+        padding-top: 2vw;
+    }
+    .aboutconfer{
+        margin-left: 11vw;
+        margin-right: 12vw;
+        height: 85%;
+        width: 40vw;
+        margin-top: 2vw;
+    }
+    .aboutconfer-box{
+        height: 40vw;
+        width:80vw;
+        font-family: var(--poppins);
+        font-size: 3.2vw;
+        font-weight:500;
+        text-transform: capitalize; 
+        padding-left: 1vw;
+        padding-right: 1.5vw;
+        padding-top: 1.7vw;
+        box-shadow: 0 0 0 0 black;
+        transition: transform 0.5s , box-shadow 0.7s;
+        margin-bottom: 3vw;
+
+    }
+    .confer-box:hover{
+        transform: scale(1.05);
+        box-shadow: 0  0 0.6vw black;
+    }
+    
+    .aboutunderline{
+        width: 12vw;
+        height: 0.5vw;
+        background-color: var(--sub-color);
+        border-radius: 1vw;
+        margin-top: 0.9vw;
+        margin-bottom: 0.9vw;
+    }
+    .aboutconfer-box p{
+        font-size: var(--contentmed);
+        text-align: justify;
+        font-weight: 300;
+        font-family: var(--poppins);
+        
+    }
+    .aboutconfer-img{
+        width: 12vw;
+        height: 10vw;
+    }
+    }
+    @media (min-width:700px) and (max-width:950px){
+        .aboutboxes{
+        height: 80vw;
+        width: 99vw;
+        padding: 5vw 0 2vw 0;
+    }
+    .aboutinfo {
+        margin-left: 15vw;
+        padding-top: 10vw;
+        padding-left: 2vw;
+        padding-bottom: 6vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vw;
+        width:70vw;
+        color: var(--white);
+        text-transform: uppercase;
+        background: var(--background);
+        
+    }
+    .aboutbox {
+        width: 30vw;
+        height: 25vw; 
+        transition: transform 0.6s ease-in-out;
+        background: var(--main-color);
+        border-bottom:2vw solid var(--sub-color) ;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .aboutinbox{
+        display: flex;
+        flex-direction: column;  
+    }
+    .aboutcount{
+        margin-top: 3vw;
+        color: var(--sub-color);
+        font-size:10vw;
+        font-family: var(--crimson);
+    }
+    .abouttext{
+        transform: translateY(-1vw);
+        font-size: 4vw;
+        font-family: var(--poppins);
+    }
+    .aboutabout {
+        width: 100vw;
+        height:110vw;
+        background: var(--background);
+    }
+    .aboutabout-info {
+        width: 100vw;
+        height:105vw;
+        background:var(--main-color);
+        color: var(--white-grey);
+        padding-left: 3vw;
+        padding-top: 1vw;
+    
+        
+    }
+    .aboutabout-info>p{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 6vw;
+        padding-left: 2vw;
+
+    }
+    .aboutabout-div{
+        font-family: var(--ubuntu);
+        padding-left: 2vw;
+        width: 87vw;
+        height: 70vw;
+        font-weight: 200;
+        font-size: 3.2vw;
+        text-align: justify;
+    }
+    .aboutenable {
+        height: 200vw;
+        width: 100vw;
+        background: var(--background);
+    }
+    .aboutenable .p{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 6.3vw;
+        text-align: center;
+        padding-top: 2vw;
+    }
+    .aboutconfer{
+        margin-left: 11vw;
+        margin-right: 12vw;
+        height: 85%;
+        width: 40vw;
+        margin-top: 2vw;
+    }
+    .aboutconfer-box{
+        height: 43vw;
+        width:80vw;
+        font-family: var(--poppins);
+        font-size: var(--contentmed);
+        font-weight:500;
+        text-transform: capitalize; 
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        padding-top: 1.7vw;
+        box-shadow: 0 0 0 0 black;
+        transition: transform 0.5s , box-shadow 0.7s;
+        margin-bottom: 3vw;
+        margin-left: -1vw;
+
+    }
+    .confer-box:hover{
+        transform: scale(1.05);
+        box-shadow: 0  0 0.6vw black;
+    }
+    
+    .aboutunderline{
+        width: 12vw;
+        height: 0.5vw;
+        background-color: var(--sub-color);
+        border-radius: 1vw;
+        margin-top: 0.9vw;
+        margin-bottom: 0.9vw;
+    }
+    .aboutconfer-box p{
+        font-size: 2.8vw;
+        text-align: justify;
+        font-weight: 300;
+        font-family: var(--poppins);
+        
+    }
+    .aboutconfer-img{
+        width: 12vw;
+        height: 10vw;
+    }  
+    }
+    @media (min-width:950px) and (max-width:1023px){
+        .aboutboxes{
+            height: 43vw;
+            width: 99vw;
+            padding: 5vw 0 2vw 0;
+        }   
+        .aboutinfo {
+            margin-left: 20vw;
+            padding-bottom: 5vw;
+            padding-left: 2vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2vw;
+            width:70vw;
+            color: var(--white);
+            text-transform: uppercase;
+            background: var(--background);
+            
+        }
+        .aboutbox {
+            width: 20vw;
+            height: 15vw; 
+            transition: transform 0.6s ease-in-out;
+            background: var(--main-color);
+            border-bottom:2vw solid var(--sub-color) ;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .aboutinbox{
+            display: flex;
+            flex-direction: column;  
+        }
+        .aboutcount{
+            color: var(--sub-color);
+            font-size:6vw;
+            font-family: var(--crimson);
+        }
+        .abouttext{
+            transform: translateY(-0.5vw);
+            font-size: 2.6vw;
+            font-family: var(--poppins);
+        }
+        .aboutabout {
+            width: 100vw;
+            height: 80vw;
+            background: var(--background);
+        }
+        .aboutabout-info {
+            width: 100vw;
+            height: 76vw;
+            background:var(--main-color);
+            color: var(--white-grey);
+            padding-left: 3vw;
+            padding-top: 1vw;
+        
+            
+        }
+        .aboutabout-info>p{
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 6vw;
+            text-align: center;
+
+        }
+        .aboutabout-div{
+            font-family: var(--poppins);
+            padding-left: 1vw;
+            width: 95vw;
+            height: 70vw;
+            font-weight: 200;
+            font-size: 2.5vw;
+            text-align: justify;
+        }
+        .aboutenable {
+            height: 140vw;
+            width: 100vw;
+            background: var(--background);
+        }
+        .aboutenable .p{
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 6vw;
+            text-align: center;
+        }
+        .aboutconfer{
+            margin-left: 18vw;
+            margin-right: 12vw;
+            height: 75vw;
+            width: 40vw;
+            margin-top: 2vw;
+        }
+        .aboutconfer-box{
+            height: 30vw;
+            width:60vw;
+            font-family: var(--poppins);
+            font-size: var(--contentlg);
+            font-weight:500;
+            text-transform: capitalize; 
+            padding-left: 1.5vw;
+            padding-right: 1.5vw;
+            padding-top: 1.7vw;
+            box-shadow: 0 0 0 0 black;
+            transition: transform 0.5s , box-shadow 0.7s;
+            margin-bottom: 2vw;
+
+        }
+        .aboutconfer-box:hover{
+            transform: scale(1.05);
+            box-shadow: 0  0 0.6vw black;
+        }
+        
+        .aboutunderline{
+            width: 8vw;
+            height: 0.5vw;
+            background-color: var(--sub-color);
+            border-radius: 1vw;
+            margin-top: 0.9vw;
+            margin-bottom: 0.9vw;
+        }
+        .aboutconfer-box p{
+            font-size: 2.2vw;
+            text-align: justify;
+            font-weight: 300;
+            font-family: var(--poppins);
+            
+        }
+        .aboutconfer-img{
+            width: 9vw;
+            height: 7vw;
+        } 
+    }
+    @media (min-width:1023px) and (max-width:1640px){
+        .aboutboxes{
+        height: 23vw;
+        width: 99vw;
+        background:var(--background);
+        padding-top: 3vw;
+    }
+    .aboutinfo {
+        margin-left: 2vw;
+        padding: 2vw 1vw 2vw 12vw;
+        gap: 1vw;
+        width:85%;
+        color: var(--white);
+        text-transform: uppercase;       
+    }
+    .aboutbox {
+        width: 17vw;
+        height: 13vw; 
+        
+        transition: transform 0.6s ease-in-out;
+        background: var(--main-color);
+        border-bottom:2vw solid var(--sub-color) ;
+        border-radius: 10px;
+    }
+    .aboutinbox{
+        display: flex;
+        flex-direction: column;  
+    }
+    .aboutcount{
+        color: var(--sub-color);
+        font-size:4.5vw;
+        font-family: var(--crimson);
+        padding-top: 3.5vw;
+        text-align: center;
+        transform: translateY(-2.5vw);
+
+    }
+    .abouttext{
+        transform: translateY(-3.0vw);
+        font-size: 2.2vw;
+        font-family: var(--ubuntu);
+        text-align: center;
+    }
+    .aboutabout {
+        width: 100vw;
+        height: 38vw;
+        box-sizing: content-box;
+    }
+    .aboutabout-info {
+        width: 100vw;
+        height: 38vw;
+        background:var(--main-color);
+        color: var(--white-grey);
+        padding-top: 2vw;   
+    }
+    .aboutabout-info>p{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 4vw;
+        text-align: center;
+    
+    }
+    .aboutabout-div{
+        font-family: var(--poppins);
+        width: 99vw;
+        height: 28vw;
+        font-weight: 300;
+        padding: 1vw 14vw 1vw 15vw;
+        font-size: 1.4vw;
+        text-align: justify;
+    }
+    .aboutenable {
+        width: 100vw;
+        height: 50vw;
+        background: var(--background);
+        padding-top: 2vw;
+    }
+    .aboutenable p{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 4vw;
+        text-align: center;        
+    }
+    .aboutconfer{
+        margin-left: 7vw;
+        margin-right: 2vw;
+        height: 40vw;
+        width: 87%;
+        margin-top: 2vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .aboutconfer-box{
+        height: 20vw;
+        width: 38vw;
+        font-family: var(--poppins);
+        font-size: 1.3vw;
+        font-weight:500;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        padding-top: 1.7vw;
+        box-shadow: 0 0 0 0 black;
+        transition: transform 0.5s , box-shadow 0.7s;
+
+        }
+    .aboutconfer-box:hover{
+        transform: scale(1.05);
+        box-shadow: 0  0 0.6vw black;
+    }
+    .aboutcapitalize{
+        text-transform: capitalize;
+    }
+    .aboutunderline{
+        width: 5vw;
+        height: 0.5vw;
+        background-color: var(--sub-color);
+        border-radius: 1vw;
+        margin-top: 0.9vw;
+        margin-bottom: 0.9vw;
+    }
+    .aboutconfer-box p{
+        font-size: 1.35vw;
+        text-align: justify;
+        font-weight: 300;
+        font-family: var(--ubuntu); 
+        color: var(--main-color);
+    }
+    .aboutconfer-img{
+        width: 5vw;
+        height: 5vw;
+    } 
+    }
+    @media (min-width:1640px){
+        .aboutboxes{
+            height: 23vw;
+            width: 99vw;
+            background:var(--background);
+            padding-top: 3vw;
+        }
+        .aboutinfo {
+            margin-left: 2vw;
+            padding: 2vw 1vw 2vw 12vw;
+            gap: 1vw;
+            width:85%;
+            color: var(--white);
+            text-transform: uppercase;       
+        }
+        .aboutbox {
+            width: 17vw;
+            height: 13vw; 
+            
+            transition: transform 0.6s ease-in-out;
+            background: var(--main-color);
+            border-bottom:2vw solid var(--sub-color) ;
+            border-radius: 10px;
+        }
+        .aboutinbox{
+            display: flex;
+            flex-direction: column;  
+        }
+        .aboutcount{
+            color: var(--sub-color);
+            font-size:4.5vw;
+            font-family: var(--crimson);
+            padding-top: 3.5vw;
+            text-align: center;
+            transform: translateY(-2.5vw);
+
+        }
+        .abouttext{
+            transform: translateY(-3.0vw);
+            font-size: 2.2vw;
+            font-family: var(--ubuntu);
+            text-align: center;
+        }
+        .aboutabout {
+            width: 100vw;
+            height: 40vw;
+            box-sizing: content-box;
+        }
+        .aboutabout-info {
+            width: 100vw;
+            height: 38vw;
+            background:var(--main-color);
+            color: var(--white-grey);
+            padding-top: 2vw;   
+        }
+        .aboutabout-info>p{
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 4vw;
+            text-align: center;
+        
+        }
+        .aboutabout-div{
+            font-family: var(--poppins);
+            width: 99vw;
+            height: 28vw;
+            font-weight: 300;
+            padding: 1vw 14vw 1vw 15vw;
+            font-size: 1.4vw;
+            text-align: justify;
+        }
+        .aboutenable {
+            width: 100vw;
+            height: 50vw;
+            background: var(--background);
+            padding-top: 2vw;
+        }
+        .aboutenable p{
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 4vw;
+            text-align: center;        
+        }
+        .aboutconfer{
+            margin-left: 7vw;
+            margin-right: 2vw;
+            height: 40vw;
+            width: 87%;
+            margin-top: 2vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .aboutconfer-box{
+            height: 18vw;
+            width: 38vw;
+            font-family: var(--poppins);
+            font-size: 1.3vw;
+            font-weight:500;
+            padding-left: 1.5vw;
+            padding-right: 1.5vw;
+            padding-top: 1.7vw;
+            box-shadow: 0 0 0 0 black;
+            transition: transform 0.5s , box-shadow 0.7s;
+
+            }
+        .aboutconfer-box:hover{
+            transform: scale(1.05);
+            box-shadow: 0  0 0.6vw black;
+        }
+        .aboutcapitalize{
+            text-transform: capitalize;
+        }
+        .aboutunderline{
+            width: 5vw;
+            height: 0.5vw;
+            background-color: var(--sub-color);
+            border-radius: 1vw;
+            margin-top: 0.9vw;
+            margin-bottom: 0.9vw;
+        }
+        .aboutconfer-box p{
+            font-size: 1.35vw;
+            text-align: justify;
+            font-weight: 300;
+            font-family: var(--ubuntu); 
+            color: var(--main-color);
+        }
+        .aboutconfer-img{
+            width: 5vw;
+            height: 5vw;
+        } 
+    }
+</style>
+<script type="text/javascript">
+    let valueDisplays=document.querySelectorAll('.aboutcount');
+			let interval=8000;
+			valueDisplays.forEach((valueDisplay) => {
+				let startValue=0;
+				let endValue=parseInt(valueDisplay.getAttribute("data-val"));
+				let duration=Math.floor(interval/endValue);
+				let counter=setInterval(function(){
+					startValue+=1;
+					valueDisplay.textContent=startValue;
+					if(startValue==endValue){
+						clearInterval(counter);
+					}
+				},duration)
+			});
+</script>

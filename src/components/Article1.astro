@@ -1,0 +1,1273 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+---
+
+<article class="teamarticle">
+    <h1 class="teamteam-head">Our Team</h1>
+    <div class="teamgrid">
+        <div class="teamteam-mem">
+            <div class="teamteam-img">
+                <img src="assets/Sharan.jpg" alt="">
+            </div>
+            <div class="teamcaption">
+                <div class="teamp"><p>Sharangouda Agni</p></div>               
+                <h1>Founder/ CEO</h1>
+                <div class="teamcontent"><p>Sharan is a Graduate in Electrical Engineering from VTU with more than 5 years of professional experience in organizations like Wipro. He is passionate about organizing and executing complex operations and is adept at managing businesses spread across the globe.</p></div>
+            </div>
+        </div>
+        <div class="teamteam-mem">
+            <div class="teamteam-img">
+                <img src="assets/Dattu.jpg" alt="">
+            </div>
+            <div class="teamcaption">
+                <div class="teamp"><p>Narasimhadatta patil</p></div>
+                <h1>Founder/ COO</h1>
+                <div class="teamcontent"><p>Datta has more than 8 years of Meditech experience and has created multiple successful products for the industry. His vision is to help small and medium scale businesses to scale up, use newer technologies and improve their margins. He also brings in a vast network in the meditech industry.</p></div>
+            </div>
+        </div>
+        <div class="teamteam-mem">
+            <div class="teamteam-img">
+                <img src="assets/Chandan.jpg" alt="">
+            </div>
+            <div class="teamcaption">
+                <div class="teamp"><p>Chandan Purohit</p></div>        
+                <h1>CTO</h1>
+                <div class="teamcontent"><p>Chandan is the driving force for Samarth Meditech in terms of Technology selection and architecture. He has worked on making all our Applications user friendly and highly responsive. He holds a Masters in Computer Science. Teaching is his passion and has been a great contributor on GitHub.</p></div>
+            </div>
+        </div>
+        <div class="teamteam-mem">
+            <div class="teamteam-img">
+                <img src="assets/Shirish.jpg" alt="">
+            </div>
+            <div class="teamcaption">
+                <div class="teamp"><p>Shirish Morab</p></div>          
+                <h1>CMO</h1>
+                <div class="teamcontent"><p>Shirish has more than 15 years of global and domestic industry experience setting up and operating delivery teams. He is an expert in creating and executing ‘go to market’ strategies, creating partnerships and driving teams to achieve. He is avid reader and nature explorer over the weekends.</p></div>
+            </div>
+        </div>
+    </div>
+</article>
+<article class="advadvisories">
+    <div class="adv-head advcolor">our advisories</div>
+    <div class="advgrid">
+        <div class="advadv-mem">
+            <div class="advadv-img">
+                <img src="assets/sudesh_naik.jpg" alt="">
+            </div>
+            <div class="advcaptionAd">
+                <div class="advp"><p>Sudhesh Nayak</p></div>
+                <h1>Founder - Akshay Infotech.</h1>
+                <div class="advcontent"><p>Mr Nayak is a meditech industry veteran with more than 25 years of experience .His rich functional expertise and inputs pertaining to accounting and financial operations in the pharma LOB have truly made our products what the industry needs. He is full time Functional Advisor to Samarth Meditech.</p></div>
+            </div>
+        </div>
+        <div class="advadv-mem">
+            <div class="advadv-img">
+                <img src="assets/Anand.jpg" alt="">
+            </div>
+            <div class="advcaptionAd">
+                <div class="advp"><p>Anand Kulkarni </p></div>
+                <h1>Consulting Advisor</h1>
+                <div class="advcontent"><p>Anand is an IIM-Indore and university of Pittsburgh USA alumnus.He has been associated with ITC,Maruti Suzuki and ICICI bank in various capacities.Samarth utilized his experience in sales and marketing to compete in the crucial market.</p></div>
+            </div>
+        </div>
+        <div class="advadv-mem">
+            <div class="advadv-img">
+                <img src="assets/Manju.jpg" alt="">
+            </div>
+            <div class="advcaptionAd">
+                <div class="advp"><p>Manjunath Yalagi </p></div>
+                <h1>CMO</h1>
+                <div class="advcontent"><p>Yalagi manjunath have 7+ years’ experience as manager in various MNC companies like amazon. He has managed complete inventory management and delivery cycles of the organization. He has experience in replenishment management, logistics. His experience has given various knowledge in building of Samarth meditech.</p></div>
+            </div>
+        </div>
+        <div class="advadv-mem">
+            <div class="advadv-img">
+                <img src="assets/subramanya.jpg" alt="">
+            </div>
+            <div class="advcaptionAd">
+                <div class="advp"><p>Subramanya Mujumdar</p></div>
+                <h1>CMO</h1>
+                <div class="advcontent"><p>Subramanya Mujumdar has 15+ years of experience in design and development of could scale applications. He has designed and developed the platform layer for Oracle's Billing and Revenue Management product. He has worked for Zuora's SaaS based billing and rating system. Currently working for Oracle America Inc.</p></div>
+            </div>
+        </div>
+    </div>
+</article>
+
+<style>
+    .teamarticle{
+        width: 100vw;
+        height: 50vw;
+        background: var(--background);
+    }
+
+    .teamteam-head{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 4vw;
+        text-align: center;
+        padding-top: 2vw;
+    }
+    .teamgrid{
+        width: 95vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 2vw;
+    }
+    .teamteam-mem{
+        position: relative;
+        width: 21vw;
+        height: 28vw;
+        top:7vw;
+        left: 2.3vw;
+        transition:background 1s , transform .3s;
+        box-shadow: 0 0 0.5vw black;
+        background:var(--white) ;
+
+
+    }
+    .teamteam-mem:hover{
+        transform: scale(1.1);
+    }
+    .teamteam-img {
+        width: 200px;
+        height: 200px;
+        transition: .2s;
+        position: relative;
+        top:-5vw;
+        left: 3.5vw;
+    }
+    .teamteam-img img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: 0 0 0.5vw black;
+
+    }
+    .advadvisories{
+        height: 58vw;
+        background: url(assets/advisories2.jpg);
+        background-size: 100vw 30vw;
+        background-repeat: no-repeat;
+    }
+    .adv-head{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 4vw;
+        text-align: center;
+        padding-top: 2vw;
+        color: var(--white);
+        text-transform: capitalize;
+    }
+    .advcolor{
+        width: 99vw;
+        height: 28vw;
+        background: var(--opacity-mainfour);
+    }
+    .advadv-mem{
+        position: relative;
+        width: 22vw;
+        height: 40vw;
+        top:-15vw;
+        left: 1.5vw;
+        transition:background 1s , transform .3s;
+        background: var(--white);
+        box-shadow: 0 0 0.5vw black;
+        border-radius: 1vw;
+    }
+    .advadv-img {
+        width: 200px;
+        height: 200px;
+        transition: .2s;
+        position: relative;
+        top:1.7vw;
+        left: 4.3vw;
+    }
+    .advadv-img img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: 0 0 5px black;
+    }
+    .teamcaption .teamp{
+        position: relative;
+        top:-4vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: 1.5vw;
+        color: var(--main-color);
+        
+    }
+    .advcaptionAd .advp{
+        position: relative;
+        top:3vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: 1.5vw;
+        color: var(--main-color);
+        
+    }
+    .teamcaption h1{
+        position: relative;
+        top:-4vw;
+        text-align: center;
+        font-family:var(--poppins);
+        font-weight: 400;
+        font-size: 1.2vw;
+        color: var(--opacity-mainseven);
+    }
+    .advcaptionAd h1{
+        position: relative;
+        top:3vw;
+        text-align: center;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 1.2vw;
+        color: var(--opacity-mainseven);
+    }
+    .teamcaption .teamcontent{
+        position: relative;
+        top:-3vw;
+        font-size: 1.09vw;
+        font-family: var(--ubuntu);
+        text-align: justify;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        color: var(--dark-grey);
+    }
+    .advcaptionAd .advcontent{
+        position: relative;
+        top:5vw;
+        font-size: 1.15vw;
+        text-align: justify;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        color: var(--dark-grey);
+    }
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (min-width:100px) and (max-width:400px){
+        .teamarticle{
+            width: 100vw;
+            height: 210vw;
+            background: var(--background);
+        }
+        
+        .teamteam-head{
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 7vw;
+            text-align: center;
+            padding-top: 2vw;
+        }
+        .teamgrid{
+            width: 80vw;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3.5vw;
+            margin-left: 7vw;
+        }
+        .teamteam-mem{
+            position: relative;
+            width: 84vw;
+            height: 43vw;
+            top:3vw;
+            left: 1vw;
+            transition:background 1s , transform .3s;
+            box-shadow: 0 0 0.5vw black;
+            background:var(--white) ;
+            display: flex;
+            flex-direction: row;
+        
+        }
+        .teamteam-mem:hover{
+            transform: scale(1.1);
+        }
+        .teamteam-img {
+            width: 18vw;
+            height: 18vw;
+            transition: .2s;
+            position: relative;
+            top:12vw;
+            left: 1vw;
+        }
+        .teamteam-img img{
+            width: 20vw;
+            height: 20vw;
+            border-radius: 20%;
+            box-shadow: 0 0 0.5vw black;
+        
+        }
+        .advadvisories{
+            height: 200vw;
+            background: url(assets/advisories2.jpg);
+            background-size: 100vw 205vw;
+            background-repeat: no-repeat;
+        }
+        .adv-head{
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 7vw;
+            text-align: center;
+            padding-top: 2vw;
+            color: var(--white);
+            text-transform: capitalize;
+        }
+        .advcolor{
+            width: 99vw;
+            height: 200vw;
+            background: var(--opacity-mainfour);
+        }
+        .advgrid{
+            position: relative;
+            width: 85vw;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3vw;
+            top:-188vw;
+            left: 7vw;
+        }
+        .advadv-mem{
+            position: relative;
+            top: 2vw;
+            width: 84vw;
+            height: 43vw;
+            transition:background 1s , transform .3s;
+            background: var(--white);
+            box-shadow: 0 0 0.5vw black;
+            border-radius: 1vw;
+        }
+        .advadv-img {
+            width: 18vw;
+            height: 18vw;
+            transition: .2s;
+            position: relative;
+            top:12vw;
+            left: 1vw;
+        }
+        .advadv-img img{
+            width: 20vw;
+            height: 20vw;
+            border-radius: 20%;
+            box-shadow: 0 0 0.5vw black;
+        }
+        .teamcaption .teamp{
+            position: relative;
+            top:2vw;
+            text-align: center;
+            font-family: var(--poppins);
+            font-weight: 500;
+            font-size: 2.8vw;
+            color: var(--main-color);
+            
+        }
+        .advcaptionAd .advp{
+            position: relative;
+            top:-15vw;
+            transform: translateX(24vw);
+            text-align: center;
+            font-family: var(--poppins);
+            font-weight: 500;
+            font-size: 2.8vw;
+            color: var(--main-color);
+            width: 50vw;
+        }
+        .teamcaption h1{
+            position: relative;
+            top:2vw;
+            text-align: center;
+            font-family:var(--poppins);
+            font-weight: 400;
+            font-size: 2.6vw;
+            color: var(--opacity-mainseven);
+        }
+        .advcaptionAd h1{
+            position: relative;
+            top:-15vw;
+            transform: translateX(23vw);
+            text-align: center;
+            font-family: var(--poppins);
+            font-weight: 500;
+            font-size: 2.6vw;
+            color: var(--opacity-mainseven);
+            width: 50vw;
+        }
+        .teamcaption .teamcontent{
+            position: relative;
+            top:3vw;
+            font-size: var(--content100);
+            font-family: var(--poppins);
+            text-align: justify;
+            margin-left: 3vw;
+            height: 10vw;
+            width: 58vw;
+            color: var(--dark-grey);
+            transform: translateX(2vw);
+        }
+        .advcaptionAd .advcontent{
+            position: relative;
+            top:-15vw;
+            left: 18vw;
+            font-size: var(--content100);
+            font-family: var(--poppins);
+            text-align: justify;
+            margin-left: 3vw;
+            height: 10vw;
+            width: 58vw;
+            color: var(--dark-grey);
+            transform: translateX(2vw);
+        }
+    }
+    @media (min-width:400px) and (max-width:700px){
+        .teamarticle{
+        width: 100vw;
+        height: 215vw;
+        background: var(--background);
+    }
+    
+    .teamteam-head{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 7vw;
+        text-align: center;
+        padding-top: 2vw;
+    }
+    .teamgrid{
+        width: 65vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3vw;
+        margin-left: 6vw;
+    }
+    .teamteam-mem{
+        position: relative;
+        width: 86vw;
+        height: 45vw;
+        top:3vw;
+        left: 1vw;
+        transition:background 1s , transform .3s;
+        box-shadow: 0 0 0.5vw black;
+        background:var(--white) ;
+        display: flex;
+        flex-direction: row;
+    
+    }
+    .teamteam-mem:hover{
+        transform: scale(1.1);
+    }
+    .teamteam-img {
+        width: 18vw;
+        height: 18vw;
+        transition: .2s;
+        position: relative;
+        top:7vw;
+        left: 1vw;
+    }
+    .teamteam-img img{
+        width: 20vw;
+        height: 20vw;
+        border-radius: 20%;
+        box-shadow: 0 0 0.5vw black;
+    
+    }
+    .advadvisories{
+        height: 240vw;
+        background: url(assets/advisories2.jpg);
+        background-size: 100vw 245vw;
+        background-repeat: no-repeat;
+    }
+    .adv-head{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 7vw;
+        text-align: center;
+        padding-top: 2vw;
+        color: var(--white);
+        text-transform: capitalize;
+    }
+    .advcolor{
+        width: 99vw;
+        height: 240vw;
+        background: var(--opacity-mainfour);
+    }
+    .advgrid{
+        position: relative;
+        width: 75vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4vw;
+        top:-225vw;
+        left: 5vw;
+    }
+    .advadv-mem{
+        position: relative;
+        top: 2vw;
+        width: 86vw;
+        height: 48vw;
+        transition:background 1s , transform .3s;
+        background: var(--white);
+        box-shadow: 0 0 0.5vw black;
+        border-radius: 1vw;
+    }
+    .advadv-img {
+        width: 18vw;
+        height: 18vw;
+        transition: .2s;
+        position: relative;
+        top:14vw;
+        left: 1vw;
+    }
+    .advadv-img img{
+        width: 18vw;
+        height: 18vw;
+        border-radius: 10%;
+        box-shadow: 0 0 5px black;
+    }
+    .teamcaption .teamp{
+        position: relative;
+        top:2vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: 3vw;
+        color: var(--main-color);
+        
+    }
+    .advcaptionAd .advp{
+        position: relative;
+        top:-15vw;
+        left: 10vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: 3vw;
+        color: var(--main-color);
+        
+    }
+    .teamcaption h1{
+        position: relative;
+        top:2vw;
+        text-align: center;
+        font-family:var(--poppins);
+        font-weight: 400;
+        font-size: 2.5vw;
+        color: var(--opacity-mainseven);
+    }
+    .advcaptionAd h1{
+        position: relative;
+        top:-15vw;
+        left: 10vw;
+        text-align: center;
+        font-family:var(--poppins);
+        font-weight: 400;
+        font-size: 2.5vw;
+        color: var(--opacity-mainseven);
+    }
+    .teamcaption .teamcontent{
+        position: relative;
+        top:3vw;
+        font-size: var(--contentmed);
+        font-family: var(--poppins);
+        text-align: justify;
+        margin-left: 3vw;
+        height: 10vw;
+        width: 60vw;
+        color: var(--dark-grey);
+        transform: translateX(2vw);
+    }
+    .advcaptionAd .advcontent{
+        position: relative;
+        top:-15vw;
+        left: 19vw;
+        font-size: var(--contentmed);
+        font-family: var(--poppins);
+        text-align: justify;
+        margin-left: 3vw;
+        height: 10vw;
+        width: 60vw;
+        color: var(--dark-grey);
+        transform: translateX(2vw);
+    }
+    }
+    @media (min-width:700px) and (max-width:950px){
+        .teamarticle{
+        width: 100vw;
+        height: 225vw;
+        background: var(--background);
+    }
+    
+    .teamteam-head{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 7vw;
+        text-align: center;
+        padding-top: 2vw;
+    }
+    .teamgrid{
+        width: 65vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3vw;
+        margin-left: 7vw;
+    }
+    .teamteam-mem{
+        position: relative;
+        width: 83vw;
+        height: 48vw;
+        top:3vw;
+        left: 1vw;
+        transition:background 1s , transform .3s;
+        box-shadow: 0 0 0.5vw black;
+        background:var(--white) ;
+        display: flex;
+        flex-direction: row;
+    
+    }
+    .teamteam-mem:hover{
+        transform: scale(1.1);
+    }
+    .teamteam-img {
+        width: 18vw;
+        height: 18vw;
+        transition: .2s;
+        position: relative;
+        top:7vw;
+        left: 1vw;
+    }
+    .teamteam-img img{
+        width: 20vw;
+        height: 20vw;
+        border-radius: 20%;
+        box-shadow: 0 0 0.5vw black;
+    
+    }
+    .advadvisories{
+        height: 234vw;
+        background: url(assets/advisories2.jpg);
+        background-size: 100vw 234vw;
+        background-repeat: no-repeat;
+    }
+    .adv-head{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 7vw;
+        text-align: center;
+        padding-top: 2vw;
+        color: var(--white);
+        text-transform: capitalize;
+    }
+    .advcolor{
+        width: 100vw;
+        height: 234vw;
+        background: var(--opacity-mainfour);
+    }
+    .advgrid{
+        position: relative;
+        width: 75vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4vw;
+        top:-222vw;
+        left: 6vw;
+    }
+    .advadv-mem{
+        position: relative;
+        top: 2vw;
+        width: 83vw;
+        height: 50vw;
+        transition:background 1s , transform .3s;
+        background: var(--white);
+        box-shadow: 0 0 0.5vw black;
+        border-radius: 1vw;
+    }
+    .advadv-img {
+        width: 18vw;
+        height: 18vw;
+        transition: .2s;
+        position: relative;
+        top:10vw;
+        left: 2.3vw;
+    }
+    .advadv-img img{
+        width: 18vw;
+        height: 18vw;
+        border-radius: 10%;
+        box-shadow: 0 0 5px black;
+    }
+    .teamcaption .teamp{
+        position: relative;
+        top:2vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: var(--contentlg);
+        color: var(--main-color);
+        
+    }
+    .advcaptionAd .advp{
+        position: relative;
+        top:-13vw;
+        left: 10vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: var(--contentlg);
+        color: var(--main-color);
+        
+    }
+    .teamcaption h1{
+        position: relative;
+        top:2vw;
+        text-align: center;
+        font-family:var(--poppins);
+        font-weight: 400;
+        font-size: var(--contentlg);
+        color: var(--opacity-mainseven);
+    }
+    .advcaptionAd h1{
+        position: relative;
+        top:-13vw;
+        left: 9vw;
+        text-align: center;
+        font-family:var(--poppins);
+        font-weight: 400;
+        font-size: var(--contentlg);
+        color: var(--opacity-mainseven);
+    }
+    .teamcaption .teamcontent{
+        position: relative;
+        top:3vw;
+        font-size: var(--contentmed);
+        font-family: var(--ubuntu);
+        text-align: justify;
+        margin-left: 3vw;
+        height: 10vw;
+        width: 58vw;
+        color: var(--dark-grey);
+        transform: translateX(2vw);
+    }
+    .advcaptionAd .advcontent{
+        position: relative;
+        top:-13vw;
+        font-size: var(--contentmed);
+        font-family: var(--ubuntu);
+        text-align: justify;
+        margin-left: 3vw;
+        height: 10vw;
+        width: 60vw;
+        color: var(--dark-grey);
+        transform: translateX(18vw);
+    }
+    }
+    @media (min-width:950px) and (max-width:1023px){
+        .teamarticle{
+        width: 100vw;
+        height: 170vw;
+        background: var(--background);
+    }
+    
+    .teamteam-head{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 7vw;
+        text-align: center;
+        padding-top: 2vw;
+    }
+    .teamgrid{
+        width: 95vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vw;
+    }
+    .teamteam-mem{
+        position: relative;
+        width: 45vw;
+        height: 70vw;
+        top:3vw;
+        left: 1vw;
+        transition:background 1s , transform .3s;
+        box-shadow: 0 0 0.5vw black;
+        background:var(--white) ;
+        border-radius: 20px;
+    }
+    .teamteam-mem:hover{
+        transform: scale(1.1);
+    }
+    .teamteam-img {
+        width: 18vw;
+        height: 18vw;
+        transition: .2s;
+        position: relative;
+        top:1vw;
+        left: 12vw;
+    }
+    .teamteam-img img{
+        width: 20vw;
+        height: 20vw;
+        border-radius: 20%;
+        box-shadow: 0 0 0.5vw black;
+    
+    }
+    .advadvisories{
+        height: 170vw;
+        background: url(assets/advisories2.jpg);
+        background-size: 100vw 170vw;
+        background-repeat: no-repeat;
+    }
+    .adv-head{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 7vw;
+        text-align: center;
+        padding-top: 2vw;
+        color: var(--white);
+        text-transform: capitalize;
+    }
+    .advcolor{
+        width: 100vw;
+        height: 170vw;
+        background: var(--opacity-mainfour);
+    }
+    .advgrid{
+        position: relative;
+        width: 90vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4vw;
+        top:-158vw;
+        left: 1vw;
+    }
+    .advadv-mem{
+        position: relative;
+        top: 2vw;
+        width: 45vw;
+        height: 73vw;
+        transition:background 1s , transform .3s;
+        background: var(--white);
+        box-shadow: 0 0 0.5vw black;
+        border-radius: 1vw;
+    }
+    .advadv-img {
+        width: 18vw;
+        height: 18vw;
+        transition: .2s;
+        position: relative;
+        top:1.7vw;
+        left: 13vw;
+    }
+    .advadv-img img{
+        width: 18vw;
+        height: 18vw;
+        border-radius: 10%;
+        box-shadow: 0 0 5px black;
+    }
+    .teamcaption .teamp{
+        position: relative;
+        top:4vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: 2.8vw;
+        color: var(--main-color);
+        
+    }
+    .advcaptionAd .advp{
+        position: relative;
+        top:4vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: 2.8vw;
+        color: var(--main-color);
+        
+    }
+    .teamcaption h1{
+        position: relative;
+        top:4vw;
+        text-align: center;
+        font-family:var(--poppins);
+        font-weight: 400;
+        font-size: 2.6vw;
+        color: var(--opacity-mainseven);
+    }
+    .advcaptionAd h1{
+        position: relative;
+        top:4vw;
+        text-align: center;
+        font-family:var(--poppins);
+        font-weight: 400;
+        font-size: 2.6vw;
+        color: var(--opacity-mainseven);
+    }
+    .teamcaption .teamcontent{
+        position: relative;
+        top:5vw;
+        font-size: var(--contentlg);
+        font-family: var(--ubuntu);
+        text-align: justify;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        height: 15vw;
+        width: 40vw;
+        color: var(--dark-grey);
+        transform: translateX(1vw);
+    }
+    .advcaptionAd .advcontent{
+        position: relative;
+        top:5vw;
+        font-size: var(--contentlg);
+        font-family: var(--ubuntu);
+        text-align: justify;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        height: 15vw;
+        width: 40vw;
+        color: var(--dark-grey);
+        transform: translateX(1vw);
+    }  
+    }
+    @media (min-width:1023px) and (max-width:1640px){
+        .teamarticle{
+        width: 100vw;
+        height: 60vw;
+        background: var(--background);
+    }
+    
+    .teamteam-head{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 4vw;
+        text-align: center;
+        padding-top: 2vw;
+    }
+    .teamgrid{
+        width: 95vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 2vw;
+    }
+    .teamteam-mem{
+        position: relative;
+        width: 21vw;
+        height: 38vw;
+        top:7vw;
+        left: 2.3vw;
+        transition:background 1s , transform .3s;
+        box-shadow: 0 0 0.5vw black;
+        background:var(--white) ;
+    
+    
+    }
+    .teamteam-mem:hover{
+        transform: scale(1.1);
+    }
+    .teamteam-img {
+        width: 12.5vw;
+        height: 12.5vw;
+        transition: .2s;
+        position: relative;
+        top:-5vw;
+        left: 3.5vw;
+    }
+    .teamteam-img img{
+        width: 12.5vw;
+        height: 12.5vw;
+        border-radius: 50%;
+        box-shadow: 0 0 0.5vw black;
+    
+    }
+    .advadvisories{
+        width: 100vw;
+        height: 65vw;
+        background: url(assets/advisories2.jpg);
+        background-size: 100vw 30vw;
+        background-repeat: no-repeat;
+        box-sizing: content-box;
+    }
+    
+    .adv-head{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 4vw;
+        text-align: center;
+        padding-top: 2vw;
+        color: var(--white);
+        text-transform: capitalize;
+    }
+    .advcolor{
+        width: 99vw;
+        height: 28vw;
+        background: var(--opacity-mainfour);
+    }
+    .advgrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        transform: translateY(-15vw);
+    }
+    .advadv-mem{
+        position: relative;
+        width: 22vw;
+        height: 45vw;
+        top:1vw;
+        left: 1vw;
+        transition:background 1s , transform .3s;
+        background: var(--white);
+        box-shadow: 0 0 0.5vw black;
+        border-radius: 1vw;
+    }
+    .advadv-img {
+        width: 12.5vw;
+        height: 12.5vw;
+        transition: .2s;
+        position: relative;
+        top:1.7vw;
+        left: 4.3vw;
+    }
+    .advadv-img img{
+        width: 12.5vw;
+        height: 12.5vw;
+        border-radius: 50%;
+        box-shadow: 0 0 5px black;
+    }
+    .teamcaption .teamp{
+        position: relative;
+        top:-4vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: 1.5vw;
+        color: var(--main-color);
+        
+    }
+    .advcaptionAd .advp{
+        position: relative;
+        top:3vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: 1.5vw;
+        color: var(--main-color);
+        
+    }
+    .teamcaption h1{
+        position: relative;
+        top:-4vw;
+        text-align: center;
+        font-family:var(--poppins);
+        font-weight: 400;
+        font-size: 1.2vw;
+        color: var(--opacity-mainseven);
+    }
+    .advcaptionAd h1{
+        position: relative;
+        top:3vw;
+        text-align: center;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 1.2vw;
+        color: var(--opacity-mainseven);
+    }
+    .teamcaption .teamcontent{
+        position: relative;
+        top:-3vw;
+        font-size: 1.2vw;
+        font-family: var(--poppins);
+        text-align: justify;
+        margin-left: 0.2vw;
+        margin-right: 0.2vw;
+        color: var(--dark-grey);
+    }
+    .advcaptionAd .advcontent{
+        position: relative;
+        top:5vw;
+        font-family: var(--poppins);
+        font-size: 1.2vw;
+        text-align: justify;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        color: var(--dark-grey);
+    } 
+    }
+    @media (min-width:1640px){
+        .teamarticle{
+        width: 100vw;
+        height: 60vw;
+        background: var(--background);
+    }
+    
+    .teamteam-head{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 4vw;
+        text-align: center;
+        padding-top: 2vw;
+    }
+    .teamgrid{
+        width: 95vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 2vw;
+    }
+    .teamteam-mem{
+        position: relative;
+        width: 21vw;
+        height: 38vw;
+        top:7vw;
+        left: 2.3vw;
+        transition:background 1s , transform .3s;
+        box-shadow: 0 0 0.5vw black;
+        background:var(--white) ;
+    
+    
+    }
+    .teamteam-mem:hover{
+        transform: scale(1.1);
+    }
+    .teamteam-img {
+        width: 12.5vw;
+        height: 12.5vw;
+        transition: .2s;
+        position: relative;
+        top:-5vw;
+        left: 3.5vw;
+    }
+    .teamteam-img img{
+        width: 12.5vw;
+        height: 12.5vw;
+        border-radius: 50%;
+        box-shadow: 0 0 0.5vw black;
+    
+    }
+    .advadvisories{
+        width: 100vw;
+        height: 65vw;
+        background: url(assets/advisories2.jpg);
+        background-size: 100vw 30vw;
+        background-repeat: no-repeat;
+        box-sizing: content-box;
+    }
+    
+    .adv-head{
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 4vw;
+        text-align: center;
+        padding-top: 2vw;
+        color: var(--white);
+        text-transform: capitalize;
+    }
+    .advcolor{
+        width: 99vw;
+        height: 28vw;
+        background: var(--opacity-mainfour);
+    }
+    .advgrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        transform: translateY(-15vw);
+    }
+    .advadv-mem{
+        position: relative;
+        width: 22vw;
+        height: 45vw;
+        top:1vw;
+        left: 1vw;
+        transition:background 1s , transform .3s;
+        background: var(--white);
+        box-shadow: 0 0 0.5vw black;
+        border-radius: 1vw;
+    }
+    .advadv-img {
+        width: 12.5vw;
+        height: 12.5vw;
+        transition: .2s;
+        position: relative;
+        top:1.7vw;
+        left: 4.3vw;
+    }
+    .advadv-img img{
+        width: 12.5vw;
+        height: 12.5vw;
+        border-radius: 50%;
+        box-shadow: 0 0 5px black;
+    }
+    .teamcaption .teamp{
+        position: relative;
+        top:-4vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: 1.5vw;
+        color: var(--main-color);
+        
+    }
+    .advcaptionAd .advp{
+        position: relative;
+        top:3vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: 1.5vw;
+        color: var(--main-color);
+        
+    }
+    .teamcaption h1{
+        position: relative;
+        top:-4vw;
+        text-align: center;
+        font-family:var(--poppins);
+        font-weight: 400;
+        font-size: 1.2vw;
+        color: var(--opacity-mainseven);
+    }
+    .advcaptionAd h1{
+        position: relative;
+        top:3vw;
+        text-align: center;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 1.2vw;
+        color: var(--opacity-mainseven);
+    }
+    .teamcaption .teamcontent{
+        position: relative;
+        top:-3vw;
+        font-size: 1.2vw;
+        font-family: var(--poppins);
+        text-align: justify;
+        margin-left: 0.2vw;
+        margin-right: 0.2vw;
+        color: var(--dark-grey);
+    }
+    .advcaptionAd .advcontent{
+        position: relative;
+        top:5vw;
+        font-family: var(--poppins);
+        font-size: 1.2vw;
+        text-align: justify;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        color: var(--dark-grey);
+    }  
+    }
+</style>

@@ -1,0 +1,974 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+
+<header class="homemain" id="home">
+    <div class="homehead z-10">
+        <div class="homelogo">
+            <img
+                class="homelogo-img"
+                src="http://samarthmeditech.com/assets/images/logo.png"
+                alt="samarth meditech"
+            />
+        </div>
+        <nav class="homenav">
+            <ul class="homenav-bar">
+                <li><a class="hometxt-nav" id="H" href="#home">Home</a></li>
+                <li><a class="hometxt-nav" id="A" href="#about">About</a></li>
+                <li><a class="hometxt-nav" id="Pr" href="#products">Products</a></li>
+                <li><a class="hometxt-nav" id="F" href="#features">Features</a></li>
+                <li><a class="hometxt-nav" id="Pa" href="#partners">Partners</a></li>
+                <li><a class="hometxt-nav" id="T" href="#testimonials">Testimonials</a></li>
+                <li><a class="hometxt-nav" id="B" href="/posts">Blog</a></li>
+                <li><a class="hometxt-nav" id="C" href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div id="navigation">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+                
+            </div>
+            <ul class="nav" id="nav">
+                <li><a class="" id="H" href="#home">Home</a></li>
+                <li><a class="" id="A" href="#about">About</a></li>
+                <li><a class="" id="Pr" href="#products">Products</a></li>
+                <li><a class="" id="F" href="#features">Features</a></li>
+                <li><a class="" id="Pa" href="#partners">Partners</a></li>
+                <li><a class="" id="T" href="#testimonials">Testimonials</a></li>
+                <li><a class="" id="B" href="#blog">Blog</a></li>
+                <li><a class="" id="C" href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="homestart">
+        <div class="homeon_image">
+            <p>A Technology venture that brings you the future of Meditech with Apps to      manage your business</p>
+            <button class="homerq_demo">Request Demo</button>
+        </div>
+    </div>
+</header>
+
+<style>
+    .homemain{
+        height: 100vh;
+        background: var(--background);
+        box-sizing: content-box;
+    }
+    .homelogo .homelogo-img{
+        width: 200px;
+        height: 80px;
+        margin-left: 50px;
+        margin-top:10px;
+    }
+    .homehead {
+        width: 1520px;
+        height: 100px;
+        display: flex;            
+        position: fixed;
+        top: 0;
+        background-color: var(--black);
+        transition: all 0.4s linear;
+    }
+    .homehead nav{
+        width: 70%;
+        height: 100px;
+        transform: translateX(200px);
+    }
+    .homenav-bar{
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        list-style: none;
+        color: var(--light-blue);
+    }
+    .homenav-bar li a{
+        text-decoration: none;
+        
+    }
+    .homenav-bar .hometxt-nav{
+        height: 30px;
+
+    }
+    .homenav{
+        color: var(--sub-color);
+    }
+    .active{
+        background: var(--white);
+        box-shadow: 0 8px 6px -6px var(--black);
+    }
+        
+    .changeText{
+        color: var(--main-color);
+        
+    }
+    .hometxt-nav{
+            display: block;
+            list-style: none;
+            text-transform: uppercase;
+            font-family: var(--ubuntu);
+            font-weight: 600;
+            font-size: 24px;
+            margin-top: 30px;
+    }
+    .homestart {
+        box-sizing: content-box;
+        display: flex;
+        transform: translateY(100px);
+        height: 100vh;
+        width: 1520px;
+        background-image: url(assets/ai.jpg);
+        background-repeat: no-repeat;
+        background-size: 1520px 110vh;
+    }
+    .homeon_image>p{
+        color: var(--light-blue);
+        width: 500px;
+        font-family: 'Fjalla One';
+        font-size: 50px;
+        padding-left: 50px;
+        transform: translateY(20px);
+        }
+    .homerq_demo{
+        color: var(--white);
+        border: 2px solid var(--light-blue);
+        position: relative;
+        height: 70px;
+        width: 200px;
+        font-size: 24px;
+        font-family: var(--ubuntu);
+        top: 120px;
+        transform: translateX(50px);    
+        transition: background 0.7s linear;
+        background: transparent;
+        background: linear-gradient(to left, transparent 50%, var(--light-blue) 50%) right;
+        background-size: 200%;
+
+    }
+    .homerq_demo:hover{
+        color: var(--black);
+        background-position: left;
+    }
+    
+
+
+
+
+
+
+
+    
+    @media (min-width:100px) and (max-width:400px){
+        .homemain{
+            height: 110vw;
+            background: var(--background);
+            }
+            .homelogo .homelogo-img{
+                width: 130px;
+                height:65px;
+                margin-left: 20px;
+                margin-top:10px;
+            }
+            .homehead {
+                width: 100vw;
+                height: 90px;
+                display: flex;            
+                position: fixed;
+                top: 0;
+                background-color: var(--black);
+                transition: all 0.4s linear;
+                z-index: 10;
+            }
+            
+            .homechange{
+                color: var(--sub-color);
+            }
+            .active{
+                background: var(--white);
+                box-shadow: 0 8px 6px -6px var(--black);
+            }
+            
+            .changeText{
+                color: var(--main-color);
+                font-weight: 500;
+            }
+            .homenav{
+                display: none;
+            }
+            #navigation{
+                width: 62vw;
+            }
+            #menu{
+                width: 20vw;
+                height: 3vw;
+                margin: 30px 0px 20px 20px;
+                cursor: pointer;
+                z-index: 10;
+                float: right;
+                position: relative;
+                top: 1vw;
+            }
+            .bar{
+                
+                height: 1.6vw;
+                width: 55%;
+                background-color: rgb(34, 95, 170);
+                display: block;
+                border-radius: 1vw;
+                transition: 0.5s ease;
+            }
+            #bar1{
+                transform: translateY(-1vw);
+
+            }
+            #bar3{
+                transform: translateY( 1vw);
+                
+            }
+            .nav li a{
+                color: var(--main-color);
+                text-decoration: none;
+                
+            }
+            .nav li a:hover{
+                border: 1px solid rgb(34, 95, 170);
+                color: #fff;
+            }
+            .nav li{
+                list-style: none;
+                padding: 5px 0;
+                margin-top: -1vw;
+            }
+            .nav{
+                padding: 0;
+                transition: 1s ease;
+                display: none;
+            }
+            
+            .icon .bar{
+                background-color: #fff;
+            }
+            .icon #bar1{
+                transform: translateY(1.5vw) rotate(-45deg);
+            }
+            .icon #bar3{
+                transform: translateY(-1.5vw) rotate(45deg);
+            }
+            .icon #bar2{
+                opacity: 0;
+            }
+            .changenav{
+                background-color: var(--sub-color);
+                opacity: 0.95;
+                height: 100vh;
+                margin: 0;
+                padding-top: 5vw;
+                position: absolute;
+                font-size: 6vw;
+                top: 0vw;
+                right: 0;
+                z-index: -100;
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .homestart {
+                box-sizing: border-box;
+                display: flex;
+                transform: translateY(90px);
+                height: 90%;
+                width: 100vw;
+                background-image: url(assets/ai.jpg);
+                background-repeat: no-repeat;
+                background-size: 120vw 90%;
+            }
+            .homeon_image>p{
+                color: var(--light-blue);
+                width: 200px;
+                height: 60vw;
+                font-family: 'Fjalla One';
+                font-size: 6vw;
+                padding-left: 4vw;
+                transform: translateY(6vw);
+                }
+            .homerq_demo{
+                color: var(--white);
+                border: 1px solid var(--light-blue);
+                position: relative;
+                height: 30px;
+                width: 110px;
+                font-size: 14px;
+                font-family: var(--ubuntu);
+                top: 2vw;
+                transform: translateX(4vw);    
+                transition: background 0.7s linear;
+                background: linear-gradient(to left, black 50%, var(--light-blue) 50%) right;
+                background-size: 200%;
+
+            }
+            .homerq_demo:hover{
+                color: var(--black);
+                background-position: left;
+            }
+    }
+    @media (min-width:400px) and (max-width:700px){
+        .homemain{
+            height: 110vw;
+            background: var(--background);
+            }
+            .homelogo .homelogo-img{
+                width: 155px;
+                height:75px;
+                margin-left: 20px;
+                margin-top:12px;
+            }
+            .homehead {
+                width: 100vw;
+                height: 100px;
+                display: flex;            
+                position: fixed;
+                top: 0;
+                background-color: var(--black);
+                transition: all 0.4s linear;
+                z-index: 10;
+            }
+            .homehead nav{
+                display: none;
+            }
+            .homechange{
+                color: var(--sub-color);
+            }
+            .active{
+                background: var(--white);
+                box-shadow: 0 8px 6px -6px var(--black);
+            }
+                
+            .changeText{
+                color: var(--main-color);
+                font-weight: 500;
+            }
+            #navigation{
+                width: 75vw;
+            }
+            #menu{
+                width: 16vw;
+                height: 1.7vw;
+                margin: 30px 0px 20px 20px;
+                cursor: pointer;
+                z-index: 10;
+                float: right;
+                position: relative;
+                top: 1vw;
+            }
+            .bar{
+                
+                height: 1.6vw;
+                width: 55%;
+                background-color: #fff;
+                display: block;
+                border-radius: 1vw;
+                transition: 0.5s ease;
+            }
+            #bar1{
+                transform: translateY(-1vw);
+
+            }
+            #bar3{
+                transform: translateY( 1vw);
+                
+            }
+            .nav li a{
+                color: var(--main-color);
+                text-decoration: none;
+                font-family: var(--ubuntu);
+                
+            }
+            .nav li a:hover{
+                color: #fff;
+            }
+            .nav li{
+                list-style: none;
+                padding: 5px 0;
+                margin-top: -1vw;
+            }
+            .nav{
+                padding: 0;
+                transition: 1s ease;
+                display: none;
+            }
+            
+            .icon .bar{
+                background-color: #fff;
+            }
+            .icon #bar1{
+                transform: translateY(1.5vw) rotate(-45deg);
+            }
+            .icon #bar3{
+                transform: translateY(-1.5vw) rotate(45deg);
+            }
+            .icon #bar2{
+                opacity: 0;
+            }
+            .changenav{
+                background-color: var(--sub-color);
+                opacity: 0.95;
+                height: 100vh;
+                margin: 0;
+                padding-top: 5vw;
+                position: absolute;
+                font-size: 6vw;
+                top: 0vw;
+                right: 0;
+                z-index: -100;
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .homestart {
+                box-sizing: border-box;
+                display: flex;
+                transform: translateY(100px);
+                height: 90%;
+                width: 100vw;
+                background-image: url(assets/ai.jpg);
+                background-repeat: no-repeat;
+                background-size: 120vw 90%;
+            }
+            .homeon_image>p{
+                color: var(--light-blue);
+                width: 55vw;
+                font-family: 'Fjalla One';
+                font-size: 6vw;
+                padding-left: 4vw;
+                transform: translateY(6vw);
+                }
+            .homerq_demo{
+                color: var(--white);
+                border: 1px solid var(--light-blue);
+                position: relative;
+                height: 40px;
+                width: 140px;
+                font-size: 19px;
+                font-family: var(--ubuntu);
+                top: 30vw;
+                transform: translateX(4vw);    
+                transition: background 0.7s linear;
+                background: linear-gradient(to left, black 50%, var(--light-blue) 50%) right;
+                background-size: 200%;
+
+            }
+            .homerq_demo:hover{
+                color: var(--black);
+                background-position: left;
+            }
+    }
+    @media (min-width:700px) and (max-width:950px){
+        .homemain{
+            height: 110vw;
+            background: var(--background);
+        }
+        .homelogo .homelogo-img{
+            width: 220px;
+            height:95px;
+            margin-left: 20px;
+            margin-top:15px;
+        }
+        .homehead {
+            width: 100vw;
+            height: 130px;
+            display: flex;            
+            position: fixed;
+            top: 0;
+            background-color: var(--black);
+            transition: all 0.4s linear;
+            z-index: 10;
+        }
+        .homehead nav{
+            display: none;
+        }
+        .homechange{
+            color: var(--sub-color);
+        }
+        .active{
+            background: var(--white);
+            box-shadow: 0 8px 6px -6px var(--black);
+        }
+            
+        .changeText{
+            color: var(--main-color);
+            font-weight: 500;
+        }
+        #navigation{
+            width: 75vw;
+        }
+        #menu{
+            width: 16vw;
+            height: 1.7vw;
+            margin: 30px 0px 20px 20px;
+            cursor: pointer;
+            z-index: 10;
+            float: right;
+            position: relative;
+            top: 2vw;
+        }
+        .bar{
+            
+            height: 1.6vw;
+            width: 55%;
+            background-color: #fff;
+            display: block;
+            border-radius: 1vw;
+            transition: 0.5s ease;
+        }
+        #bar1{
+            transform: translateY(-1vw);
+
+        }
+        #bar3{
+            transform: translateY( 1vw);
+            
+        }
+        .nav li a{
+            color: var(--main-color);
+            text-decoration: none;
+            font-family: var(--ubuntu);
+            
+        }
+        .nav li a:hover{
+            color: #fff;
+        }
+        .nav li{
+            list-style: none;
+            padding: 5px 0;
+            margin-top: -1vw;
+        }
+        .nav{
+            padding: 0;
+            transition: 1s ease;
+            display: none;
+        }
+        
+        .icon .bar{
+            background-color: #fff;
+        }
+        .icon #bar1{
+            transform: translateY(1.5vw) rotate(-45deg);
+        }
+        .icon #bar3{
+            transform: translateY(-1.5vw) rotate(45deg);
+        }
+        .icon #bar2{
+            opacity: 0;
+        }
+        .changenav{
+            background-color: var(--sub-color);
+            opacity: 0.95;
+            height: 100vh;
+            margin: 0;
+            padding-top: 5vw;
+            position: absolute;
+            font-size: 6vw;
+            top: 0vw;
+            right: 0;
+            z-index: -100;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .homestart {
+            box-sizing: border-box;
+            display: flex;
+            transform: translateY(130px);
+            height: 90%;
+            width: 100vw;
+            background-image: url(assets/ai.jpg);
+            background-repeat: no-repeat;
+            background-size: 120vw 90%;
+        }
+        .homeon_image>p{
+            color: var(--light-blue);
+            width: 55vw;
+            font-family: 'Fjalla One';
+            font-size: 6vw;
+            padding-left: 4vw;
+            transform: translateY(6vw);
+            }
+        .homerq_demo{
+            color: var(--white);
+            border: 1px solid var(--light-blue);
+            position: relative;
+            height: 40px;
+            width: 140px;
+            font-size: 19px;
+            font-family: var(--ubuntu);
+            top: 30vw;
+            transform: translateX(4vw);    
+            transition: background 0.7s linear;
+            background: linear-gradient(to left, black 50%, var(--light-blue) 50%) right;
+            background-size: 200%;
+
+        }
+        .homerq_demo:hover{
+            color: var(--black);
+            background-position: left;
+        }
+    }
+    @media (min-width:950px) and (max-width:1023px){
+        .homemain{
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 615px;
+            background: var(--background);
+            box-sizing: content-box;
+        }
+        .homelogo .homelogo-img{
+            width: 180px;
+            height:80px;
+            margin-left: 40px;
+            margin-top:5px;
+        }
+        .homehead {
+            width: 100vw;
+            height: 100px;
+            display: flex;            
+            position: fixed;
+            top: 0;
+            background-color: var(--black);
+            transition: all 0.4s linear;
+            z-index: 10;
+        }
+        .homehead nav{
+            width: 80%;
+            height: 100px;
+            transform: translateX(3vw);
+        }
+        .homenav-bar{
+            color: var(--light-blue);
+            gap: 10px;
+            justify-content: center;
+        }
+        .homenav-bar .hometxt-nav{
+            height: 30px;
+        
+        }
+        .hometxt-nav{
+                display: block;
+                list-style: none;
+                text-transform: uppercase;
+                font-family: var(--ubuntu);
+                font-weight: 400;
+                font-size: 1.7vw;
+                margin-top: 50px;
+        }
+            
+
+        .homechange{
+            color: var(--sub-color);
+        }
+        .active{
+            background: var(--white);
+            box-shadow: 0 8px 6px -6px var(--black);
+        }
+            
+        .changeText{
+            color: var(--main-color);
+            font-weight: 500;
+        }
+        #navigation{
+            display: none;
+        }
+        .homestart {
+            margin: 0;
+            padding: 0;
+            float: left;
+            display: flex;
+            transform: translateY(100px);
+            height: 82%;
+            width: 100vw;
+            background-image: url(assets/ai.jpg);
+            background-attachment: fixed;
+            background-size: 100vw 600px;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+        }
+        .homeon_image>p{
+            color: var(--light-blue);
+            width: 400px;
+            font-family: 'Fjalla One';
+            font-size: 34px;
+            padding-left: 8vw;
+            transform: translateY(4vw);
+            }
+        .homerq_demo{
+            color: var(--white);
+            border: 1px solid var(--light-blue);
+            position: relative;
+            height: 60px;
+            width: 150\5px;
+            font-size: 22px;
+            font-family: var(--ubuntu);
+            top: 10vw;
+            transform: translateX(8vw);    
+            transition: background 0.7s linear;
+            background: linear-gradient(to left, black 50%, var(--light-blue) 50%) right;
+            background-size: 200%;
+
+        }
+        .homerq_demo:hover{
+            color: var(--black);
+            background-position: left;
+        }    
+    }
+    @media (min-width:1023px) and (max-width:1640px){
+        .homemain{
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 700px;
+            background: var(--background);
+            overflow-x: hidden;
+        }
+        .homelogo .homelogo-img{
+            width: 170px;
+            height:70px;
+            margin-left: 40px;
+            margin-top:8px;
+            margin-right: 2vw;
+        }
+        .homehead {
+            width: 100vw;
+            height: 95px;          
+            position: fixed;
+            top: 0;
+            background-color: var(--black);
+            transition: all 0.4s linear;
+            z-index: 10;
+            
+        }
+        .homehead nav{
+            width: 785px;
+            height: 95px;    
+            position: fixed;
+            right: 229px;     
+        }
+        .homenav-bar{
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            color: var(--light-blue);
+
+        }
+        .homenav-bar .hometxt-nav{
+            height: 30px;
+        
+        }
+        .hometxt-nav{
+            display: block;
+            list-style: none;
+            text-transform: uppercase;
+            font-family: var(--ubuntu);
+            font-weight: 400;
+            font-size: 19px;
+            margin-top: 40px;
+        }   
+        .active{
+            background: var(--white);
+            box-shadow: 0 8px 6px -6px var(--black);
+            
+        }
+            
+        .changeText{
+            color: var(--main-color);
+            font-weight: 500;
+        }
+        #navigation{
+            display: none;
+        }
+        .homestart {
+            display: flex;
+            transform: translateY(95px);
+            height: 600px;
+            width: 100vw;
+            background-image: url(assets/ai.jpg);
+            background-size: 100vw 620px;
+            background-repeat: no-repeat;
+            box-sizing: content-box;
+        }
+        .homeon_image>p{
+            color: var(--light-blue);
+            width: 480px;
+            font-family: 'Fjalla One';
+            font-size: 48px;
+            padding-left: 50px;
+            transform: translateY(4vw);
+            }
+        .homerq_demo{
+            color: var(--white);
+            border: 1px solid var(--light-blue);
+            position: relative;
+            height: 60px;
+            width: 170px;
+            font-size: 24px;
+            font-family: var(--ubuntu);
+            top: 8vw;
+            transform: translateX(50px);    
+            transition: background 0.7s linear;
+            background: linear-gradient(to left, black 50%, var(--light-blue) 50%) right;
+            background-size: 200%;
+
+        }
+        .homerq_demo:hover{
+            color: var(--black);
+            background-position: left;
+        }
+    }
+    @media(min-width:1640px){
+        .homemain{
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 700px;
+            background: var(--background);
+            overflow-x: hidden;
+        }
+        .homelogo .homelogo-img{
+            width: 170px;
+            height:70px;
+            margin-left: 40px;
+            margin-top:8px;
+            margin-right: 2vw;
+        }
+        .homehead {
+            width: 100vw;
+            height: 95px;          
+            position: fixed;
+            top: 0;
+            background-color: var(--black);
+            transition: all 0.4s linear;
+            z-index: 10;
+        }
+        .homehead nav{
+            width: 775px;
+            height: 95px;    
+            position: fixed;
+            right: 229px;     
+        }
+        .homenav-bar{
+            display: flex;
+            color: var(--light-blue);
+            gap: 12px;
+            justify-content: center;
+            
+
+        }
+        .homenav-bar .hometxt-nav{
+            height: 30px;
+        
+        }
+        .hometxt-nav{
+            display: block;
+            list-style: none;
+            text-transform: uppercase;
+            font-family: var(--ubuntu);
+            font-weight: 400;
+            font-size: 19px;
+            margin-top: 40px;
+        }
+            
+
+        .homechange{
+            color: var(--sub-color);
+        }
+        .active{
+            background: var(--white);
+            box-shadow: 0 8px 6px -6px var(--black);
+        }
+            
+        .changeText{
+            color: var(--main-color);
+            font-weight: 500;
+        }
+        #navigation{
+            display: none;
+        }
+        .homestart {
+            display: flex;
+            transform: translateY(95px);
+            height: 600px;
+            width: 100vw;
+            background-image: url(assets/ai.jpg);
+            background-size: 100vw 620px;
+            background-repeat: no-repeat;
+            box-sizing: content-box;
+        }
+        .homeon_image>p{
+            color: var(--light-blue);
+            width: 480px;
+            font-family: 'Fjalla One';
+            font-size: 48px;
+            padding-left: 50px;
+            transform: translateY(4vw);
+            }
+        .homerq_demo{
+            color: var(--white);
+            border: 1px solid var(--light-blue);
+            position: relative;
+            height: 60px;
+            width: 170px;
+            font-size: 24px;
+            font-family: var(--ubuntu);
+            top: 8vw;
+            transform: translateX(50px);    
+            transition: background 0.7s linear;
+            background: linear-gradient(to left, black 50%, var(--light-blue) 50%) right;
+            background-size: 200%;
+
+        }
+        .homerq_demo:hover{
+            color: var(--black);
+            background-position: left;
+        }
+    }
+
+        
+        
+        
+        
+        
+
+</style>
+<script type="text/javascript">
+    let head=document.querySelector('.homehead');
+    let navBar=document.querySelector('.homenav-bar');
+    console.log(head);
+    console.log(navBar);
+    let heasection=680;
+    window.onscroll=function(){
+        var top=window.scrollY
+        if(top>heasection){    
+            head.classList.add('active');
+            navBar.classList.add('changeText');
+        }
+        else{
+            head.classList.remove('active');
+            navBar.classList.remove('changeText');
+        }
+    }
+    function onClickMenu(){
+				document.getElementById('menu').classList.toggle("icon");
+				document.getElementById('nav').classList.toggle("changenav");
+
+
+			}
+    
+</script> 

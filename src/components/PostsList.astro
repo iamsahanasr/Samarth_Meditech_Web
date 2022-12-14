@@ -1,0 +1,39 @@
+---
+import type { BlogPostFrontmatter} from "@types";
+import type { MarkdownInstance } from "astro";
+type Post=MarkdownInstance<BlogPostFrontmatter>;
+interface Props{
+    posts: Post[];
+}
+const formatDate=(date:string):string=>{
+    return new Date(date).toLocaleDateString("en-IN",{
+        year:'numeric',
+        month:'long', 
+        day:'numeric'
+    })
+};
+let  {posts}= Astro.props;
+posts=posts.sort((a:Post, b:Post): number =>{
+    if(a.frontmatter.date > b.frontmatter.date){
+        return -1;
+    }
+    if(a.frontmatter.date <  b.frontmatter.date){
+        return 1;
+    }
+    return 0;
+});
+---
+{posts.map(post => (
+    <div class="post">
+        {post.frontmatter.draft &&
+        <p class="bg-red-700 text-white inline-block px-2">DRAFT</p>}
+        <a class="text-blue-700 hover:underline" href={post.url}>{post.frontmatter.title}</a>
+        <p>{formatDate(post.frontmatter.date)}</p>
+    </div>
+))}
+<style>
+    .post{
+        height: 100px;
+
+    }
+</style>

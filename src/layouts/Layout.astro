@@ -1,0 +1,59 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title> {title} </title>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+		<style is:global>
+			@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+			:root {
+				--main-color:rgb(19, 33, 75);
+				--sub-color:rgb(213, 86, 86);
+				--light-blue:rgb(0, 204, 255);
+				--background:rgb(238, 246, 254);
+				--opacity-background:rgb(238, 246, 254,0.8);
+				--white:white;
+				--white-grey:rgb(229, 227, 227);
+				--dark-grey:rgb(0, 0, 0,0.7);
+				--opacity-mainfour:rgb(38, 23, 102,0.4);
+				--opacity-mainseven:rgb(38, 23, 102,0.7);
+				--black:black;
+				--poppins:'Poppins';
+				--ubuntu:'Ubuntu',sans-serif;
+				--crimson:'Crimson Pro', serif;
+				--content100:2.6vw;
+				--contentmed:2.8vw;     
+			}    
+		</style>
+	</head>
+	<body>
+		<slot />
+		<script type="text/javascript">
+			const observer=new IntersectionObserver((entries)=>{
+						entries.forEach((entry)=>{
+							if(entry.isIntersecting){
+								entry.target.classList.add('show');
+							}
+							else{
+								entry.target.classList.remove('show');
+							}
+						});
+					});
+			const hiddenElements=document.querySelectorAll('.hide');
+			hiddenElements.forEach((el)=>observer.observe(el));
+		
+		</script>
+	</body>
+</html>
+

@@ -1,0 +1,772 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+---
+<article id="partners" class="partarticle">
+    <h1 class="parthead ">Samarth Meditech-Partnership</h1>
+    <div><p class="partcontent "> Our commitment to provide local support and service made us build some of the best partnerships that made all the difference. Our success till date can be attributed to our partners who have been Samarth Meditech’s greatest strength. Every partner goes through a rigorous screening and vetting process. Every partner then goes through full training sessions which make them understand Samarth’s vision and can connect with our goals and aims. This makes every Samarth Meditech Partner think and act like the core team with full accountability and responsibility to represent Samarth Meditech.</p></div>
+    <div class="partgrid hide" >
+        <div class="partbox hide">
+            <div class="img"><img src="assets/partner1.png" alt=""></div>
+            <h1>Core Partners</h1>
+            <p>Individuals</p>
+        </div>
+        <div class="partbox hide">
+            <div class="img"><img src="assets/partner2.png" alt=""></div>
+            <h1>Gold Partners</h1>
+            <p>Firms and Organizations</p>
+        </div>
+        <div class="partbox hide">
+            <div class="img"><img src="assets/partner3.png" alt=""></div>
+            <h1>Platinum Partners</h1>
+            <p>Firms and Organizations</p>
+        </div>
+        <div class="partbox hide">
+            <div class="img"><img src="assets/partner4.png" alt=""></div>
+            <h1>Become a partner of samarth...?</h1>
+            <button>click here</button>
+        </div>
+    </div>
+
+</article>
+<style>
+    .partarticle{
+        height: 50vw;
+        box-sizing: border-box;
+        background:var(--background);
+    }
+    .parthead{
+        color: var(--black);
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 4vw;
+        text-align: center;
+        padding-top: 5vw;
+        padding-bottom: 1vw;
+    }
+    .hide{
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(0.5vw);
+        transform: translateX(-100%);
+    }
+    .show{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+    .partcontent{
+        text-align: center;
+        font-family: var(--ubuntu);
+        font-weight: 300;
+        font-size: 1.3vw;
+        padding:0 5vw 0 5vw ;
+        color: var(--dark-grey);
+    }
+    .partgrid{
+        margin-left: 2vw;
+        margin-top: 1vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .partbox{
+        width: 21vw;
+        margin: 1.5vw;    
+    }
+    .img{
+        width: 21vw;
+        height: 14vw;
+        border-radius: 0.5vw;
+        box-shadow: -0.2vw -0.2vw 0.5vw black;
+    }
+    .img img{
+        width: 21vw;
+        height: 14vw;
+    }
+    .partbox h1 {
+        text-align: center;
+        margin-top: 1.5vw;
+        font-weight: 400;
+        font-family: var(--ubuntu);
+        font-size: 1.3vw;     
+    }
+    .partbox p{
+        text-align: center;
+        margin-top: 1.3vw;
+        font-weight: 200;
+        font-family: var(--ubuntu);
+        font-size: 1.2vw;  
+    }
+    .partbox button{
+        background: var(--main-color);
+        color: white;
+        border-radius: 1.2vw;
+        height: 2.5vw;
+        width: 10vw;
+        margin-left: 5vw;
+        position: absolute;
+        top:19vw;
+        font-weight: 300;
+        font-family: var(--ubuntu);
+        font-size: 1.2vw; 
+        text-transform: uppercase;
+        border: 0.5vw solid var(--main-color);
+        transition: 0.4s;
+    }
+    .partbox button:hover{
+        background:transparent;
+        color: var(--main-color);
+        
+    }
+    .partbox:nth-child(1){
+        transition-delay: 200ms;
+    }
+    .partbox:nth-child(2){
+        transition-delay: 400ms;
+    }
+    .partbox:nth-child(3){
+        transition-delay: 700ms;
+    }
+    .partbox:nth-child(4){
+        transition-delay: 1000ms;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (min-width:0px) and (max-width:400px){
+        .partarticle{
+        height: 130vw;
+        box-sizing: border-box;
+        background:var(--background);
+    }
+    .parthead{
+        color: var(--black);
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 6vw;
+        text-align: center;
+        padding-top: 5vw;
+        padding-bottom: 1vw;
+    }
+    .hide{
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(0.5vw);
+        transform: translateX(-100%);
+    }
+    .show{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+    .partcontent{
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: var(--content100);
+        padding:0 5vw 0 5vw ;
+        color: var(--main-color);
+        height: 43vw;
+        text-align: justify;
+    }
+    .partgrid{
+        gap: 6vw;
+        width: 60vw;
+        margin-left: 17vw;
+        margin-top: 2vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    .partbox{
+        width: 27vw;
+        height: 19vw;
+        margin: 1.5vw;    
+    }
+    .img{
+        width: 27vw;
+        height: 19vw;
+        border-radius: 0.5vw;
+        box-shadow: -0.2vw -0.2vw 0.5vw black;
+    }
+    .img img{
+        width: 27vw;
+        height: 19vw;
+    }
+    .partbox h1 {
+        text-align: center;
+        margin-top: 1.5vw;
+        font-weight: 400;
+        font-family: var(--ubuntu);
+        font-size: 2.2vw;     
+    }
+    .partbox p{
+        text-align: center;
+        margin-top: 1.3vw;
+        font-weight: 300;
+        font-family: var(--ubuntu);
+        font-size: 1.6vw;  
+    }
+    .partbox button{
+        background: var(--main-color);
+        color: white;
+        border-radius: 1.2vw;
+        height: 5.5vw;
+        width: 15vw;
+        margin-left: 5vw;
+        position: absolute;
+        top:28vw;
+        font-weight: 400;
+        font-family: var(--ubuntu);
+        font-size: 2vw; 
+        text-transform: uppercase;
+        border: 0.5vw solid var(--main-color);
+        transition: 0.4s;
+    }    
+    }
+    @media (min-width:400px) and (max-width:700px){
+        .partarticle{
+        height: 125vw;
+        box-sizing: border-box;
+        background:var(--background);
+    }
+    .parthead{
+        color: var(--black);
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 6vw;
+        text-align: center;
+        padding-top: 5vw;
+        padding-bottom: 1vw;
+    }
+    .hide{
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(0.5vw);
+        transform: translateX(-100%);
+    }
+    .show{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+    .partcontent{
+        text-align: center;
+        font-family: var(--ubuntu);
+        font-weight: 300;
+        font-size: var(--contentmed);
+        padding:0 5vw 0 5vw ;
+        color: var(--main-color);
+        height: 32vw;
+    }
+    .partgrid{
+        gap: 6vw;
+        width: 60vw;
+        margin-left: 17vw;
+        margin-top: 9vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    .partbox{
+        width: 27vw;
+        height: 19vw;
+        margin: 1.5vw;    
+    }
+    .img{
+        width: 27vw;
+        height: 19vw;
+        border-radius: 0.5vw;
+        box-shadow: -0.2vw -0.2vw 0.5vw black;
+    }
+    .img img{
+        width: 27vw;
+        height: 19vw;
+    }
+    .partbox h1 {
+        text-align: center;
+        margin-top: 1.5vw;
+        font-weight: 400;
+        font-family: var(--ubuntu);
+        font-size: 2.2vw;     
+    }
+    .partbox p{
+        text-align: center;
+        margin-top: 1.3vw;
+        font-weight: 300;
+        font-family: var(--ubuntu);
+        font-size: 1.6vw;  
+    }
+    .partbox button{
+        background: var(--main-color);
+        color: white;
+        border-radius: 1.2vw;
+        height: 5.5vw;
+        width: 15vw;
+        margin-left: 5vw;
+        position: absolute;
+        top:28vw;
+        font-weight: 400;
+        font-family: var(--ubuntu);
+        font-size: 2vw; 
+        text-transform: uppercase;
+        border: 0.5vw solid var(--main-color);
+        transition: 0.4s;
+    }
+    }
+    @media (min-width:700px) and (max-width:950px){
+        .partarticle{
+        height: 125vw;
+        box-sizing: border-box;
+        background:var(--background);
+    }
+    .parthead{
+        color: var(--black);
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 6vw;
+        text-align: center;
+        padding-top: 5vw;
+        padding-bottom: 1vw;
+    }
+    .hide{
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(0.5vw);
+        transform: translateX(-100%);
+    }
+    .show{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+    .partcontent{
+        text-align: center;
+        font-family: var(--ubuntu);
+        font-weight: 300;
+        font-size: var(--contentmed);
+        padding:0 5vw 0 5vw ;
+        color: var(--main-color);
+        height: 33vw;
+    }
+    .partgrid{
+        gap: 6vw;
+        width: 60vw;
+        margin-left: 17vw;
+        margin-top: 8vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    .partbox{
+        width: 27vw;
+        height: 19vw;
+        margin: 1.5vw;    
+    }
+    .img{
+        width: 27vw;
+        height: 19vw;
+        border-radius: 0.5vw;
+        box-shadow: -0.2vw -0.2vw 0.5vw black;
+    }
+    .img img{
+        width: 27vw;
+        height: 19vw;
+    }
+    .partbox h1 {
+        text-align: center;
+        margin-top: 1.5vw;
+        font-weight: 400;
+        font-family: var(--ubuntu);
+        font-size: 2.2vw;     
+    }
+    .partbox p{
+        text-align: center;
+        margin-top: 1.3vw;
+        font-weight: 300;
+        font-family: var(--ubuntu);
+        font-size: 1.6vw;  
+    }
+    .partbox button{
+        background: var(--main-color);
+        color: white;
+        border-radius: 1.2vw;
+        height: 5.5vw;
+        width: 15vw;
+        margin-left: 5vw;
+        position: absolute;
+        top:28vw;
+        font-weight: 400;
+        font-family: var(--ubuntu);
+        font-size: 2vw; 
+        text-transform: uppercase;
+        border: 0.5vw solid var(--main-color);
+        transition: 0.4s;
+    } 
+    }
+    @media (min-width:950px) and (max-width:1023px){
+        .partarticle{
+            height: 115vw;
+            box-sizing: border-box;
+            background:var(--background);
+        }
+        .parthead{
+            color: var(--black);
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 6vw;
+            text-align: center;
+            padding-top: 5vw;
+            padding-bottom: 1vw;
+        }
+        .hide{
+            opacity: 0;
+            transition: all 1s;
+            filter: blur(0.5vw);
+            transform: translateX(-100%);
+        }
+        .show{
+            opacity: 1;
+            filter: blur(0);
+            transform: translateX(0);
+        }
+        .partcontent{
+            text-align: center;
+            font-family: var(--ubuntu);
+            font-weight: 300;
+            font-size: var(--contentmed);
+            padding:0 5vw 0 5vw ;
+            color: var(--main-color);
+            height: 50vw;
+        }
+        .partgrid{
+            gap: 6vw;
+            width: 60vw;
+            margin-left: 17vw;
+            transform: translateY(5vw);
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+        }
+        .partbox{
+            width: 27vw;
+            height: 19vw;
+            margin: 1.5vw;    
+        }
+        .img{
+            width: 27vw;
+            height: 19vw;
+            border-radius: 0.5vw;
+            box-shadow: -0.2vw -0.2vw 0.5vw black;
+        }
+        .img img{
+            width: 27vw;
+            height: 19vw;
+        }
+        .partbox h1 {
+            text-align: center;
+            margin-top: 1.5vw;
+            font-weight: 400;
+            font-family: var(--ubuntu);
+            font-size: 2.2vw;     
+        }
+        .partbox p{
+            text-align: center;
+            margin-top: 1.3vw;
+            font-weight: 300;
+            font-family: var(--ubuntu);
+            font-size: 1.6vw;  
+        }
+        .partbox button{
+            background: var(--main-color);
+            color: white;
+            border-radius: 1.2vw;
+            height: 5.5vw;
+            width: 15vw;
+            margin-left: 5vw;
+            position: absolute;
+            top:26vw;
+            font-weight: 400;
+            font-family: var(--ubuntu);
+            font-size: 2vw; 
+            text-transform: uppercase;
+            border: 0.5vw solid var(--main-color);
+            transition: 0.4s;
+        }
+        .partarticle{
+            height: 100vw;
+            box-sizing: border-box;
+            background:var(--background);
+        }
+        .parthead{
+            color: var(--black);
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 6vw;
+            text-align: center;
+            padding-top: 5vw;
+            padding-bottom: 1vw;
+        }
+        .hide{
+            opacity: 0;
+            transition: all 1s;
+            filter: blur(0.5vw);
+            transform: translateX(-100%);
+        }
+        .show{
+            opacity: 1;
+            filter: blur(0);
+            transform: translateX(0);
+        }
+        .partcontent{
+            text-align: center;
+            font-family: var(--ubuntu);
+            font-weight: 300;
+            font-size: 2.2vw;
+            padding:0 5vw 0 5vw ;
+            color: var(--main-color);
+            height: 20vw;
+        }
+        .partgrid{
+            gap: 6vw;
+            width: 60vw;
+            margin-left: 17vw;
+            margin-top: 2vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+        }
+        .partbox{
+            width: 27vw;
+            height: 19vw;
+            margin: 1.5vw;    
+        }
+        .img{
+            width: 27vw;
+            height: 19vw;
+            border-radius: 0.5vw;
+            box-shadow: -0.2vw -0.2vw 0.5vw black;
+        }
+        .img img{
+            width: 27vw;
+            height: 19vw;
+        }
+        .partbox h1 {
+            text-align: center;
+            margin-top: 1.5vw;
+            font-weight: 400;
+            font-family: var(--ubuntu);
+            font-size: 2.2vw;     
+        }
+        .partbox p{
+            text-align: center;
+            margin-top: 1.3vw;
+            font-weight: 300;
+            font-family: var(--ubuntu);
+            font-size: 1.6vw;  
+        }
+        .partbox button{
+            background: var(--main-color);
+            color: white;
+            border-radius: 1.2vw;
+            height: 5.5vw;
+            width: 15vw;
+            margin-left: 5vw;
+            position: absolute;
+            top:26vw;
+            font-weight: 400;
+            font-family: var(--ubuntu);
+            font-size: 2vw; 
+            text-transform: uppercase;
+            border: 0.5vw solid var(--main-color);
+            transition: 0.4s;
+        }
+    }
+    @media (min-width:1023px) and (max-width:1640px){
+        .partarticle{
+        height: 50vw;
+        box-sizing: border-box;
+        background:var(--background);
+    }
+    .parthead{
+        color: var(--black);
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 4vw;
+        text-align: center;
+        padding-top: 5vw;
+        padding-bottom: 1vw;
+    }
+    .hide{
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(0.5vw);
+        transform: translateX(-100%);
+    }
+    .show{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+    .partcontent{
+        text-align: center;
+        font-family: var(--ubuntu);
+        font-weight: 300;
+        font-size: 1.4vw;
+        padding:0 5vw 0 5vw ;
+        color: var(--dark-grey);
+    }
+    .partgrid{
+        margin-left: 2vw;
+        margin-top: 2vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .partbox{
+        width: 21vw;
+        margin: 1.5vw;    
+    }
+    .img{
+        width: 21vw;
+        height: 14vw;
+        border-radius: 0.5vw;
+        box-shadow: -0.2vw -0.2vw 0.5vw black;
+    }
+    .img img{
+        width: 21vw;
+        height: 14vw;
+    }
+    .partbox h1 {
+        text-align: center;
+        margin-top: 1.5vw;
+        font-weight: 400;
+        font-family: var(--ubuntu);
+        font-size: 1.3vw;     
+    }
+    .partbox p{
+        text-align: center;
+        margin-top: 1.3vw;
+        font-weight: 200;
+        font-family: var(--ubuntu);
+        font-size: 1.2vw;  
+    }
+    .partbox button{
+        background: var(--main-color);
+        color: white;
+        border-radius: 1.2vw;
+        height: 2.5vw;
+        width: 10vw;
+        margin-left: 5vw;
+        position: absolute;
+        top:19vw;
+        font-weight: 300;
+        font-family: var(--ubuntu);
+        font-size: 1.2vw; 
+        text-transform: uppercase;
+        border: 0.5vw solid var(--main-color);
+        transition: 0.4s;
+    }
+    .partbox button:hover{
+        background:transparent;
+        color: var(--main-color);
+        
+    }
+    }
+    @media (min-width:1640px){
+        .partarticle{
+        height: 50vw;
+        box-sizing: border-box;
+        background:var(--background);
+    }
+    .parthead{
+        color: var(--black);
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 4vw;
+        text-align: center;
+        padding-top: 5vw;
+        padding-bottom: 1vw;
+    }
+    .hide{
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(0.5vw);
+        transform: translateX(-100%);
+    }
+    .show{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+    .partcontent{
+        text-align: center;
+        font-family: var(--ubuntu);
+        font-weight: 300;
+        font-size: 1.4vw;
+        padding:0 5vw 0 5vw ;
+        color: var(--dark-grey);
+    }
+    .partgrid{
+        margin-left: 2vw;
+        margin-top: 2vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .partbox{
+        width: 21vw;
+        margin: 1.5vw;    
+    }
+    .img{
+        width: 21vw;
+        height: 14vw;
+        border-radius: 0.5vw;
+        box-shadow: -0.2vw -0.2vw 0.5vw black;
+    }
+    .img img{
+        width: 21vw;
+        height: 14vw;
+    }
+    .partbox h1 {
+        text-align: center;
+        margin-top: 1.5vw;
+        font-weight: 400;
+        font-family: var(--ubuntu);
+        font-size: 1.3vw;     
+    }
+    .partbox p{
+        text-align: center;
+        margin-top: 1.3vw;
+        font-weight: 200;
+        font-family: var(--ubuntu);
+        font-size: 1.2vw;  
+    }
+    .partbox button{
+        background: var(--main-color);
+        color: white;
+        border-radius: 1.2vw;
+        height: 2.5vw;
+        width: 10vw;
+        margin-left: 5vw;
+        position: absolute;
+        top:19vw;
+        font-weight: 300;
+        font-family: var(--ubuntu);
+        font-size: 1.2vw; 
+        text-transform: uppercase;
+        border: 0.5vw solid var(--main-color);
+        transition: 0.4s;
+    }
+    .partbox button:hover{
+        background:transparent;
+        color: var(--main-color);
+        
+    }
+    }
+</style>
+

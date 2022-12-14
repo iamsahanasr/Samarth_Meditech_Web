@@ -1,0 +1,1245 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+---
+<article class="proarticle" id="products">
+    <div class="proproduct" >
+        <h1 class="prohead">Our Product Portfolio</h1>
+        <div class="probody">
+            <div class="proslider">
+                <div class="proslides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    
+                    <div class="proslide profirst proflex">
+                        <div class="proleft">
+                            <div class="proimg-back"></div>
+                            <img src="assets/pharmacist2.jpg" alt="">
+                        </div>
+                        <div class="proright">
+                            <h1>SM KALPA</h1>
+                            <h2>Retail Pharmacy Management System</h2>
+                            <div><p>The Smart way to boost productivity, improve efficiency and retain customers with host of new features to simplify the business operations and tracking</p></div>
+                            <button>TAKE 45 DAYS FREE DEMO</button>
+                        </div>
+                        
+
+                    </div>
+                    <div class="proslide proflex">
+                        <div class="proleft">
+                            <div class="proimg-back"></div>
+                            <img src="assets/healthcare.jpg" alt="">
+                        </div>
+                        <div class="proright">
+                            <h1>SM TEJAS</h1>
+                            <h2>All integrated Hospital Management System</h2>
+                            <div><p>With advanced technological approch we Automate your Healthcare Facility to go paperless, improve efficiency & accelerate revenue</p></div>
+                            <button>TAKE 45 DAYS FREE DEMO</button>
+                        </div>
+                    </div>
+                    <div class="proslide proflex">
+                        <div class="proleft">
+                            <div class="proimg-back"></div>
+                            <img src="assets/retail.jpg" alt="">
+                        </div>
+
+                        <div class="proright">
+                            <h1>SM SHODHA</h1>
+                            <h2>Pharma Distribution Administration Systems</h2>
+                            <div><p>Our advanced accounting features and analytics lets you focus on building your distribution network while Shodha does the rest for you.</p></div>
+                            <button>TAKE 45 DAYS FREE DEMO</button>
+                        </div>
+                    </div>
+                    <div class="proslide proflex">
+                        <div class="proleft">
+                            <div class="proimg-back"></div>
+                            <img src="assets/clinic.jpg" alt="">
+                        </div>
+
+                        <div class="proright">
+                            <h1>SM DAKSHA</h1>
+                            <h2>Clinic Administration Management Systems</h2>
+                            <div><p>Reduce clinical risk with Digital Documentation and efficient technical approch, Comply with standards and improve patient experience.</p></div>
+                            <button>TAKE 45 DAYS FREE DEMO</button>
+                        </div>
+                    </div>
+
+                    <div class="pronavigation-auto">
+                        <div class="proauto-btn1"></div>
+                        <div class="proauto-btn2"></div>
+                        <div class="proauto-btn3"></div>
+                        <div class="proauto-btn4"></div>
+
+                    </div>
+
+
+                </div> 
+                <div class="pronavigation-manual">
+                    <label for="radio1" class="promanual-btn"></label>
+                    <label for="radio2" class="promanual-btn"></label>
+                    <label for="radio3" class="promanual-btn"></label>
+                    <label for="radio4" class="promanual-btn"></label>
+
+                </div>   
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .proarticle{
+        height: 47vw;
+        background: var(--background);
+    }
+    .proproduct{
+        height: 47vw;
+        align-items: center;
+        transform: translateY(3vw);
+    }
+    .probody{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .prohead{
+        color: black;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 4vw;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+
+    }
+
+    .proslider{
+        margin-top: 2vw;
+        width: 90vw;
+        height: 32.5vw;
+        border-radius: 0.5vw;
+        overflow: hidden;
+        box-shadow: 0 0 0.5vw black;
+    }
+    .proslides{
+        width: 500%;
+        height: 32.5vw;
+        display: flex;
+    }
+    .proslides input{
+        display: none;
+    }
+    .proslide{
+        width:20%;
+        transition: 2s;
+        background: var(--white);    
+    }
+
+    .proflex{
+        display: flex;
+        flex-direction: row;
+    }
+    .proslide .proleft{
+        width: 50vw;
+        height: 100%;
+    }
+    .proslide .proleft img{
+        
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
+
+    .proslide .proright{
+        width: 50vw;
+        height: 100%;
+    }
+    .proslide .proright h1{
+        position: relative;
+        top:0.5vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 600;
+        font-size: 3vw;
+        color: var(--main-color);
+        padding-top: 2vw;
+    }
+    .proslide .proright h2{
+        position: relative;
+        top:0.5vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: 1.7vw;
+        color: var(--opacity-mainseven);
+    }
+    .proslide .proright div{
+        position: relative;
+        top:2.5vw;
+        left: 12.5vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 1.25vw;
+        color: var(--main-color);
+        width: 45%;
+    }
+    .proslide .proright button{
+        margin-top:3vw;
+        margin-left: 12vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 1.4vw;
+        background: var(--main-color);
+        color: var(--white);
+        width:22vw ;
+        height: 3vw;
+        border-radius: 1vw;
+    }
+    .pronavigation-manual{
+        position: absolute;
+        width: 22vw;
+        margin-top: -2.55vw;
+        margin-left: 37vw;
+        display: flex;
+        justify-content: center;
+    }
+    .promanual-btn{
+        border: 0.12vw solid var(--main-color);
+        padding: 0.35vw;
+        border-radius: 0.5vw;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .promanual-btn:not(:last-child){
+        margin-right: 2.6vw;
+    }
+    #radio1:checked ~ .profirst{
+        margin-left: 0;
+    }
+    #radio2:checked ~ .profirst{
+        margin-left: -20%;
+    }
+    #radio3:checked ~ .profirst{
+        margin-left: -40%;
+    }
+    #radio4:checked ~ .profirst{
+        margin-left: -60%;
+    }
+    .pronavigation-auto{
+        position:absolute;
+        display: flex;
+        width: 22vw;
+        margin-left: 37vw;
+        justify-content: center;
+        margin-top: 29.9vw;
+    }
+    .pronavigation-auto div{
+        border: 0.12vw solid var(--main-color);
+        padding: 0.35vw;
+        border-radius: 0.5vw;
+        transition: 1s;
+    }
+    .pronavigation-auto div:not(:last-child){
+        margin-right: 2.6vw;
+    }
+    #radio1:checked ~ .pronavigation-auto .proauto-btn1{
+        background: var(--main-color);
+    }
+    #radio2:checked ~ .pronavigation-auto .proauto-btn2{
+        background: var(--main-color);
+    }
+    #radio3:checked ~ .pronavigation-auto .proauto-btn3{
+        background: var(--main-color);
+    }
+    #radio4:checked ~ .pronavigation-auto .proauto-btn4{
+        background: var(--main-color);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (min-width:100px) and (max-width:400px){
+        .proarticle{
+        height: 76vw;
+    }
+    .proproduct{
+        height: 70vw;
+        align-items: center;
+        background: var(--background);
+    }
+    .probody{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .prohead{
+        color: black;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 7vw;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+    
+    }
+    
+    .proslider{
+        margin-top: 5vw;
+        width: 90vw;
+        height: 50vw;
+        border-radius: 0.5vw;
+        overflow: hidden;
+        box-shadow: 0 0 0.5vw black;
+    }
+    .proslides{
+        width: 500%;
+        height: 50vw;
+        display: flex;
+    }
+    .proslides input{
+        display: none;
+    }
+    .proslide{
+        width:20%;
+        transition: 2s;
+        background: var(--white);    
+    }
+    
+    .proflex{
+        display: flex;
+        flex-direction: row;
+    }
+    .proslide .proleft{
+        width: 65vw;
+        height: 100%;
+    }
+    .proslide .proleft img{
+        
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
+    
+    .proslide .proright{
+        width: 49vw;
+        height: 100%;
+    }
+    .proslide .proright h1{
+        position: relative;
+        top:0.5vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 600;
+        font-size: 5vw;
+        color: var(--main-color);
+        padding-top: 2vw;
+    }
+    .proslide .proright h2{
+        position: relative;
+        top:0.5vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: 2.2vw;
+        color: var(--opacity-mainseven);
+    }
+    .proslide .proright div{
+        position: relative;
+        top:2.5vw;
+        left: 0.8vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 2.4vw;
+        color: var(--main-color);
+        width: 98%;
+        height: 23vw;
+    }
+    .proslide .proright button{
+        margin-top:4vw;
+        margin-left: 6vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 1.7vw;
+        background: var(--main-color);
+        color: var(--white);
+        width:26vw ;
+        height: 6vw;
+        border-radius: 1vw;
+    }
+    .pronavigation-manual{
+        position: absolute;
+        width: 22vw;
+        margin-top: -2.55vw;
+        margin-left: 37vw;
+        display: flex;
+        justify-content: center;
+    }
+    .promanual-btn{
+        border: 0.12vw solid var(--main-color);
+        padding: 0.35vw;
+        border-radius: 0.5vw;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .promanual-btn:not(:last-child){
+        margin-right: 2.6vw;
+    }
+    #radio1:checked ~ .profirst{
+        margin-left: 0;
+    }
+    #radio2:checked ~ .profirst{
+        margin-left: -20%;
+    }
+    #radio3:checked ~ .profirst{
+        margin-left: -40%;
+    }
+    #radio4:checked ~ .profirst{
+        margin-left: -60%;
+    }
+    .pronavigation-auto{
+        position:absolute;
+        display: flex;
+        width: 22vw;
+        margin-left: 37vw;
+        justify-content: center;
+        margin-top: 47.5vw;
+    }
+    .pronavigation-auto div{
+        border: 0.12vw solid var(--main-color);
+        padding: 0.35vw;
+        border-radius: 0.5vw;
+        transition: 1s;
+    }
+    .pronavigation-auto div:not(:last-child){
+        margin-right: 2.6vw;
+    }
+    }
+    @media (min-width:400px) and (max-width:700px){
+        .proarticle{
+        height: 75vw;
+        background: var(--background);
+    }
+    .proproduct{
+        height: 70vw;
+        align-items: center;
+        background: var(--background);
+    }
+    .probody{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .prohead{
+        color: black;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 7vw;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+    
+    }
+    
+    .proslider{
+        margin-top: 5vw;
+        width: 90vw;
+        height: 50vw;
+        border-radius: 0.5vw;
+        overflow: hidden;
+        box-shadow: 0 0 0.5vw black;
+    }
+    .proslides{
+        width: 500%;
+        height: 50vw;
+        display: flex;
+    }
+    .proslides input{
+        display: none;
+    }
+    .proslide{
+        width:20%;
+        transition: 2s;
+        background: var(--white);    
+    }
+    
+    .proflex{
+        display: flex;
+        flex-direction: row;
+    }
+    .proslide .proleft{
+        width: 65vw;
+        height: 100%;
+    }
+    .proslide .proleft img{
+        
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
+    
+    .proslide .proright{
+        width: 49vw;
+        height: 100%;
+    }
+    .proslide .proright h1{
+        position: relative;
+        top:0.5vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 600;
+        font-size: 5vw;
+        color: var(--main-color);
+        padding-top: 2vw;
+    }
+    .proslide .proright h2{
+        position: relative;
+        top:0.5vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: 2.2vw;
+        color: var(--opacity-mainseven);
+    }
+    .proslide .proright div{
+        position: relative;
+        top:2.5vw;
+        left: 1.5vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 1.9vw;
+        color: var(--main-color);
+        width: 95%;
+    }
+    .proslide .proright button{
+        margin-top:4vw;
+        margin-left: 6vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 1.7vw;
+        background: var(--main-color);
+        color: var(--white);
+        width:26vw ;
+        height: 6vw;
+        border-radius: 1vw;
+    }
+    .pronavigation-manual{
+        position: absolute;
+        width: 22vw;
+        margin-top: -2.55vw;
+        margin-left: 37vw;
+        display: flex;
+        justify-content: center;
+    }
+    .promanual-btn{
+        border: 0.12vw solid var(--main-color);
+        padding: 0.35vw;
+        border-radius: 0.5vw;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .promanual-btn:not(:last-child){
+        margin-right: 2.6vw;
+    }
+    #radio1:checked ~ .profirst{
+        margin-left: 0;
+    }
+    #radio2:checked ~ .profirst{
+        margin-left: -20%;
+    }
+    #radio3:checked ~ .profirst{
+        margin-left: -40%;
+    }
+    #radio4:checked ~ .profirst{
+        margin-left: -60%;
+    }
+    .pronavigation-auto{
+        position:absolute;
+        display: flex;
+        width: 22vw;
+        margin-left: 37vw;
+        justify-content: center;
+        margin-top: 47.5vw;
+    }
+    .pronavigation-auto div{
+        border: 0.12vw solid var(--main-color);
+        padding: 0.35vw;
+        border-radius: 0.5vw;
+        transition: 1s;
+    }
+    .pronavigation-auto div:not(:last-child){
+        margin-right: 2.6vw;
+    }
+    }
+    @media (min-width:700px) and (max-width:950px){
+        .proarticle{
+        height: 58vw;
+        background: var(--background);
+    }
+    .proproduct{
+        height: 47vw;
+        align-items: center;
+        transform: translateY(3vw);
+    }
+    .probody{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .prohead{
+        color: black;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 6vw;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+    
+    }
+    
+    .proslider{
+        margin-top: 2vw;
+        width: 90vw;
+        height: 40vw;
+        border-radius: 0.5vw;
+        overflow: hidden;
+        box-shadow: 0 0 0.5vw black;
+    }
+    .proslides{
+        width: 500%;
+        height: 40vw;
+        display: flex;
+    }
+    .proslides input{
+        display: none;
+    }
+    .proslide{
+        width:20%;
+        transition: 2s;
+        background: var(--white);    
+    }
+    
+    .proflex{
+        display: flex;
+        flex-direction: row;
+    }
+    .proslide .proleft{
+        width: 50vw;
+        height: 100%;
+    }
+    .proslide .proleft img{
+        
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
+    
+    .proslide .proright{
+        width: 50vw;
+        height: 100%;
+    }
+    .proslide .proright h1{
+        position: relative;
+        top:0.5vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 600;
+        font-size: 5vw;
+        color: var(--main-color);
+        padding-top: 2vw;
+    }
+    .proslide .proright h2{
+        position: relative;
+        top:0.5vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: 2.4vw;
+        color: var(--opacity-mainseven);
+    }
+    .proslide .proright div{
+        position: relative;
+        top:2.5vw;
+        left: 2vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 2vw;
+        color: var(--main-color);
+        width:90%;
+    }
+    .proslide .proright button{
+        margin-top:3vw;
+        margin-left: 11vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 1.4vw;
+        background: var(--main-color);
+        color: var(--white);
+        width:22vw ;
+        height: 3vw;
+        border-radius: 1vw;
+    }
+    .pronavigation-manual{
+        position: absolute;
+        width: 22vw;
+        margin-top: -2.55vw;
+        margin-left: 37vw;
+        display: flex;
+        justify-content: center;
+    }
+    .promanual-btn{
+        border: 0.35vw solid var(--main-color);
+        padding: 0.35vw;
+        border-radius: 0.5vw;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .promanual-btn:not(:last-child){
+        margin-right: 2.6vw;
+    }
+    #radio1:checked ~ .profirst{
+        margin-left: 0;
+    }
+    #radio2:checked ~ .profirst{
+        margin-left: -20%;
+    }
+    #radio3:checked ~ .profirst{
+        margin-left: -40%;
+    }
+    #radio4:checked ~ .profirst{
+        margin-left: -60%;
+    }
+    .pronavigation-auto{
+        position:absolute;
+        display: flex;
+        width: 22vw;
+        margin-left: 37vw;
+        justify-content: center;
+        margin-top: 37.5vw;
+    }
+    .pronavigation-auto div{
+        border: 0.35vw solid var(--main-color);
+        padding: 0.35vw;
+        border-radius: 0.5vw;
+        transition: 1s;
+    }
+    .pronavigation-auto div:not(:last-child){
+        margin-right: 2.6vw;
+    } 
+    }
+    @media (min-width:950px) and (max-width:1023px){
+        .proarticle{
+        height: 58vw;
+        background: var(--background);
+    }
+    .proproduct{
+        height: 47vw;
+        align-items: center;
+        transform: translateY(3vw);
+    }
+    .probody{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .prohead{
+        color: black;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 6vw;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+    
+    }
+    
+    .proslider{
+        margin-top: 2vw;
+        width: 90vw;
+        height: 40vw;
+        border-radius: 0.5vw;
+        overflow: hidden;
+        box-shadow: 0 0 0.5vw black;
+    }
+    .proslides{
+        width: 500%;
+        height: 40vw;
+        display: flex;
+    }
+    .proslides input{
+        display: none;
+    }
+    .proslide{
+        width:20%;
+        transition: 2s;
+        background: var(--white);    
+    }
+    
+    .proflex{
+        display: flex;
+        flex-direction: row;
+    }
+    .proslide .proleft{
+        width: 50vw;
+        height: 100%;
+    }
+    .proslide .proleft img{
+        
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
+    
+    .proslide .proright{
+        width: 50vw;
+        height: 100%;
+    }
+    .proslide .proright h1{
+        position: relative;
+        top:0.5vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 600;
+        font-size: 5vw;
+        color: var(--main-color);
+        padding-top: 2vw;
+    }
+    .proslide .proright h2{
+        position: relative;
+        top:0.5vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: 2.4vw;
+        color: var(--opacity-mainseven);
+    }
+    .proslide .proright div{
+        position: relative;
+        top:2.5vw;
+        left: 2vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 2vw;
+        color: var(--main-color);
+        width:90%;
+    }
+    .proslide .proright button{
+        margin-top:3vw;
+        margin-left: 11vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 1.4vw;
+        background: var(--main-color);
+        color: var(--white);
+        width:22vw ;
+        height: 3vw;
+        border-radius: 1vw;
+    }
+    .pronavigation-manual{
+        position: absolute;
+        width: 22vw;
+        margin-top: -2.55vw;
+        margin-left: 37vw;
+        display: flex;
+        justify-content: center;
+    }
+    .promanual-btn{
+        border: 0.35vw solid var(--main-color);
+        padding: 0.35vw;
+        border-radius: 0.5vw;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .promanual-btn:not(:last-child){
+        margin-right: 2.6vw;
+    }
+    #radio1:checked ~ .profirst{
+        margin-left: 0;
+    }
+    #radio2:checked ~ .profirst{
+        margin-left: -20%;
+    }
+    #radio3:checked ~ .profirst{
+        margin-left: -40%;
+    }
+    #radio4:checked ~ .profirst{
+        margin-left: -60%;
+    }
+    .pronavigation-auto{
+        position:absolute;
+        display: flex;
+        width: 22vw;
+        margin-left: 37vw;
+        justify-content: center;
+        margin-top: 37.5vw;
+    }
+    .pronavigation-auto div{
+        border: 0.35vw solid var(--main-color);
+        padding: 0.35vw;
+        border-radius: 0.5vw;
+        transition: 1s;
+    }
+    .pronavigation-auto div:not(:last-child){
+        margin-right: 2.6vw;
+    }  
+    }
+    @media (min-width:1023px) and (max-width:1640px){
+        .proarticle{
+        height: 47vw;
+        background: var(--background);
+    }
+    .proproduct{
+        height: 47vw;
+        align-items: center;
+        transform: translateY(3vw);
+    }
+    .probody{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .prohead{
+        color: black;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 4vw;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+    
+    }
+    
+    .proslider{
+        margin-top: 2vw;
+        width: 90vw;
+        height: 32.5vw;
+        border-radius: 0.5vw;
+        overflow: hidden;
+        box-shadow: 0 0 0.5vw black;
+    }
+    .proslides{
+        width: 500%;
+        height: 32.5vw;
+        display: flex;
+    }
+    .proslides input{
+        display: none;
+    }
+    .proslide{
+        width:20%;
+        transition: 2s;
+        background: var(--white);    
+    }
+    
+    .proflex{
+        display: flex;
+        flex-direction: row;
+    }
+    .proslide .proleft{
+        width: 50vw;
+        height: 100%;
+    }
+    .proslide .proleft img{
+        
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
+    
+    .proslide .proright{
+        width: 50vw;
+        height: 100%;
+    }
+    .proslide .proright h1{
+        position: relative;
+        top:0.5vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 600;
+        font-size: 3vw;
+        color: var(--main-color);
+        padding-top: 2vw;
+    }
+    .proslide .proright h2{
+        position: relative;
+        top:0.5vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: 1.7vw;
+        color: var(--opacity-mainseven);
+    }
+    .proslide .proright div{
+        position: relative;
+        top:2.5vw;
+        left: 12.5vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 1.25vw;
+        color: var(--main-color);
+        width: 45%;
+    }
+    .proslide .proright button{
+        margin-top:3vw;
+        margin-left: 12vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 1.4vw;
+        background: var(--main-color);
+        color: var(--white);
+        width:22vw ;
+        height: 3vw;
+        border-radius: 1vw;
+    }
+    .pronavigation-manual{
+        position: absolute;
+        width: 22vw;
+        margin-top: -2.55vw;
+        margin-left: 37vw;
+        display: flex;
+        justify-content: center;
+    }
+    .promanual-btn{
+        border: 0.12vw solid var(--main-color);
+        padding: 0.35vw;
+        border-radius: 0.5vw;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .promanual-btn:not(:last-child){
+        margin-right: 2.6vw;
+    }
+    #radio1:checked ~ .profirst{
+        margin-left: 0;
+    }
+    #radio2:checked ~ .profirst{
+        margin-left: -20%;
+    }
+    #radio3:checked ~ .profirst{
+        margin-left: -40%;
+    }
+    #radio4:checked ~ .profirst{
+        margin-left: -60%;
+    }
+    .pronavigation-auto{
+        position:absolute;
+        display: flex;
+        width: 22vw;
+        margin-left: 37vw;
+        justify-content: center;
+        margin-top: 29.9vw;
+    }
+    .pronavigation-auto div{
+        border: 0.12vw solid var(--main-color);
+        padding: 0.35vw;
+        border-radius: 0.5vw;
+        transition: 1s;
+    }
+    .pronavigation-auto div:not(:last-child){
+        margin-right: 2.6vw;
+    } 
+    }
+    @media (min-width:1640px){
+        .proarticle{
+        height: 47vw;
+        background: var(--background);
+    }
+    .proproduct{
+        height: 47vw;
+        align-items: center;
+        transform: translateY(3vw);
+    }
+    .probody{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .prohead{
+        color: black;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 4vw;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+    
+    }
+    
+    .proslider{
+        margin-top: 2vw;
+        width: 90vw;
+        height: 32.5vw;
+        border-radius: 0.5vw;
+        overflow: hidden;
+        box-shadow: 0 0 0.5vw black;
+    }
+    .proslides{
+        width: 500%;
+        height: 32.5vw;
+        display: flex;
+    }
+    .proslides input{
+        display: none;
+    }
+    .proslide{
+        width:20%;
+        transition: 2s;
+        background: var(--white);    
+    }
+    
+    .proflex{
+        display: flex;
+        flex-direction: row;
+    }
+    .proslide .proleft{
+        width: 50vw;
+        height: 100%;
+    }
+    .proslide .proleft img{
+        
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
+    
+    .proslide .proright{
+        width: 50vw;
+        height: 100%;
+    }
+    .proslide .proright h1{
+        position: relative;
+        top:0.5vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 600;
+        font-size: 3vw;
+        color: var(--main-color);
+        padding-top: 2vw;
+    }
+    .proslide .proright h2{
+        position: relative;
+        top:0.5vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 500;
+        font-size: 1.7vw;
+        color: var(--opacity-mainseven);
+    }
+    .proslide .proright div{
+        position: relative;
+        top:2.5vw;
+        left: 12.5vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 1.25vw;
+        color: var(--main-color);
+        width: 45%;
+    }
+    .proslide .proright button{
+        margin-top:3vw;
+        margin-left: 12vw;
+        text-align: center;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 1.4vw;
+        background: var(--main-color);
+        color: var(--white);
+        width:22vw ;
+        height: 3vw;
+        border-radius: 1vw;
+    }
+    .pronavigation-manual{
+        position: absolute;
+        width: 22vw;
+        margin-top: -2.55vw;
+        margin-left: 37vw;
+        display: flex;
+        justify-content: center;
+    }
+    .promanual-btn{
+        border: 0.12vw solid var(--main-color);
+        padding: 0.35vw;
+        border-radius: 0.5vw;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .promanual-btn:not(:last-child){
+        margin-right: 2.6vw;
+    }
+    #radio1:checked ~ .profirst{
+        margin-left: 0;
+    }
+    #radio2:checked ~ .profirst{
+        margin-left: -20%;
+    }
+    #radio3:checked ~ .profirst{
+        margin-left: -40%;
+    }
+    #radio4:checked ~ .profirst{
+        margin-left: -60%;
+    }
+    .pronavigation-auto{
+        position:absolute;
+        display: flex;
+        width: 22vw;
+        margin-left: 37vw;
+        justify-content: center;
+        margin-top: 29.9vw;
+    }
+    .pronavigation-auto div{
+        border: 0.12vw solid var(--main-color);
+        padding: 0.35vw;
+        border-radius: 0.5vw;
+        transition: 1s;
+    }
+    .pronavigation-auto div:not(:last-child){
+        margin-right: 2.6vw;
+    }
+    }
+    
+</style>
+<script type="text/javascript">
+   var counter=1;
+			setInterval(function(){
+				document.getElementById('radio'+counter).checked=true;
+				counter++;
+				if(counter>4){
+					counter=1;
+				}
+			},5000);
+</script>

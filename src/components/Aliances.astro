@@ -1,0 +1,552 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+---
+<article class="allarticle">
+    <div class="allalliance" >
+        <h1 class="allhead">Samarth Meditech - Alliances</h1>
+        <div class="allboxMain hide">
+            <div class="allbox hide">
+                <div class="allicon"><img src="assets/alliances_icon.png" alt=""></div>
+                <h1>Satvik SoftTech</h1>
+                <p>#16 2nd Cross Vidyanagar hubli-560031</p>
+            </div>
+            <div class="allbox hide">
+                <div class="allicon"><img src="assets/alliances_icon.png" alt=""></div>
+                <h1>Eternal Software solutions.</h1>
+                <p>Beside Karnataka Bank, cotten market Hubli-560029</p>
+            </div>
+            <div class="allbox hide">
+                <div class="allicon"><img src="assets/alliances_icon.png" alt=""></div>
+                <h1>Akshay infotech.</h1>
+                <p>Mayur Estate keshwapura Hubli-580023</p>
+            </div>
+        </div>
+    </div>
+</article>
+
+<style>
+    .allarticle{
+        height: 32vw;
+        background:url(assets/alliances.jpg);
+        background-repeat: no-repeat;
+        background-size: 100vw 35vw;
+    }
+    .allalliance{
+        height: 32vw;
+        align-items: center;
+        background: var(--opacity-mainseven);
+        position: relative;
+        overflow: hidden;
+    }
+    .allhead{
+        color: white;
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 4vw;
+        text-align: center;
+        padding-top: 0.8vw;
+    }
+    .hide{
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(0.2vw);
+        transform: translateY(100%);
+    }
+    .show{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+    .allboxMain{
+        height: 17vw;
+        width: 60vw;
+        margin-top: 5vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;    
+    }
+    .allbox{
+        height: 17vw;
+        width: 27vw;
+        background: var(--opacity-background);
+        margin-right: 2vw;
+        margin-left: 4vw;
+        border-radius: 0.5vw;
+    }
+    .allicon{
+        background: var(--sub-color);
+        height: 6.4vw;
+        width: 6.4vw;
+        border-radius: 50%;
+        transform: translateX(10vw);
+        margin-top: 1vw;
+    }
+    .allicon img{
+        padding: 0.8vw;
+    }   
+    .allbox h1 {
+        text-align: center;
+        margin-top: 1vw;
+        font-weight: 400;
+        font-family: var(--ubuntu);
+        font-size: 1.4vw;     
+    }
+    .allbox p{
+        text-align: center;
+        margin-top: 1vw;
+        font-weight: 200;
+        font-family: var(--ubuntu);
+        font-size: 1.3vw;  
+    } 
+
+    .allbox:nth-child(2){
+        transition-delay: 400ms;
+    }
+    .allbox:nth-child(3){
+        transition-delay: 700ms;
+    }
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    @media (min-width:100px) and (max-width:400px){
+        .allarticle{
+            height: 110vw;
+            background:url(assets/alliances.jpg);
+            background-repeat: no-repeat;
+            background-size: 100vw 110vw;
+        }
+        .allalliance{
+            height: 110vw;
+            align-items: center;
+            background: var(--opacity-mainseven);
+            position: relative;
+            overflow: hidden;
+        }
+        .allhead{
+            color: white;
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 6vw;
+            text-align: center;
+            padding-top: 1vw;
+        }
+
+        .allboxMain{
+            height: 17vw;
+            width: 60vw;
+            margin-top: 5vw;
+            padding-left: 24vw;
+            display: grid;
+            grid-template-columns: 1fr;    
+            gap: 4vw;
+        }
+        .allbox{
+            height: 28vw;
+            width: 45vw;
+            background: var(--opacity-background);
+            margin-right: 2vw;
+            margin-left: 4vw;
+            border-radius: 0.5vw;
+        }
+        .allicon{
+            background: var(--sub-color);
+            height: 15vw;
+            width: 15vw;
+            border-radius: 50%;
+            transform: translateX(14.3vw);
+            margin-top: 1vw;
+        }
+        .allicon img{
+            height: 13vw;
+            width: 13vw;
+            padding: 1.2vw;
+        }   
+        .allbox h1 {
+            text-align: center;
+            margin-top: 2vw;
+            font-weight: 400;
+            font-family: var(--ubuntu);
+            font-size: 3vw;     
+        }
+        .allbox p{
+            text-align: center;
+            margin-top: 1vw;
+            font-weight: 200;
+            font-family: var(--ubuntu);
+            font-size: 2.3vw;  
+        }    
+    }
+    @media (min-width:400px) and (max-width:700px){
+        .allarticle{
+            height: 115vw;
+            background:url(assets/alliances.jpg);
+            background-repeat: no-repeat;
+            background-size: 100vw 114vw;
+        }
+        .allalliance{
+            height: 114vw;
+            align-items: center;
+            background: var(--opacity-mainseven);
+            position: relative;
+            overflow: hidden;
+        }
+        .allhead{
+            color: white;
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 6vw;
+            text-align: center;
+            padding-top: 1vw;
+        }
+        
+        .allboxMain{
+            height: 17vw;
+            width: 60vw;
+            margin-top: 5vw;
+            padding-left: 24vw;
+            display: grid;
+            grid-template-columns: 1fr;    
+            gap: 4vw;
+        }
+        .allbox{
+            height: 28vw;
+            width: 45vw;
+            background: var(--opacity-background);
+            margin-right: 2vw;
+            margin-left: 4vw;
+            border-radius: 0.5vw;
+        }
+        .allicon{
+            background: var(--sub-color);
+            height: 15vw;
+            width: 15vw;
+            border-radius: 50%;
+            transform: translateX(14.3vw);
+            margin-top: 1vw;
+        }
+        .allicon img{
+            height: 13vw;
+            width: 13vw;
+            padding: 1.2vw;
+        }   
+        .allbox h1 {
+            text-align: center;
+            margin-top: 2vw;
+            font-weight: 400;
+            font-family: var(--ubuntu);
+            font-size: 3vw;     
+        }
+        .allbox p{
+            text-align: center;
+            margin-top: 1vw;
+            font-weight: 200;
+            font-family: var(--ubuntu);
+            font-size: 2.3vw;  
+        }
+    }
+    @media (min-width:700px) and (max-width:950px){
+        .allarticle{
+            height: 100vw;
+            background:url(assets/alliances.jpg);
+            background-repeat: no-repeat;
+            background-size: 100vw 100vw;
+        }
+        .allalliance{
+            height: 100vw;
+            align-items: center;
+            background: var(--opacity-mainseven);
+            position: relative;
+            overflow: hidden;
+        }
+        .allhead{
+            color: white;
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 6vw;
+            text-align: center;
+            padding-top: 1vw;
+        }
+        .allboxMain{
+            width: 60vw;
+            margin-top: 5vw;
+            padding-left: 24vw;
+            display: grid;
+            grid-template-columns: 1fr;    
+            gap: 4vw;
+        }
+        .allbox{
+            height: 23vw;
+            width: 45vw;
+            background: var(--opacity-background);
+            margin-right: 2vw;
+            margin-left: 4vw;
+            border-radius: 0.5vw;
+        }
+        .allicon{
+            background: var(--sub-color);
+            height: 12vw;
+            width: 12vw;
+            border-radius: 50%;
+            transform: translateX(16.3vw);
+            margin-top: 1vw;
+        }
+        .allicon img{
+            height: 10vw;
+            width: 10vw;
+            padding: 1.2vw;
+        }   
+        .allbox h1 {
+            text-align: center;
+            margin-top: 2vw;
+            font-weight: 400;
+            font-family: var(--ubuntu);
+            font-size: var(--contentmed);     
+        }
+        .allbox p{
+            text-align: center;
+            margin-top: 1vw;
+            font-weight: 200;
+            font-family: var(--ubuntu);
+            font-size: 2vw;  
+        }
+    }
+    @media (min-width:950px) and (max-width:1023px){
+        .allarticle{
+            height: 70vw;
+            background:url(assets/alliances.jpg);
+            background-repeat: no-repeat;
+            background-size: 100vw 70vw;
+        }
+        .allalliance{
+            height: 70vw;
+            align-items: center;
+            background: var(--opacity-mainseven);
+            position: relative;
+            overflow: hidden;
+        }
+        .allhead{
+            color: white;
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 6vw;
+            text-align: center;
+            padding-top: 1vw;
+        }
+        .allboxMain{
+            width: 60vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 2fr 1fr 2fr 1fr; 
+            gap: 1vw;
+        }
+
+        .allbox{
+            height: 23vw;
+            width: 35vw;
+            background: var(--opacity-background);
+            border-radius: 0.5vw;
+        }
+        .allbox:nth-child(1){
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .allbox:nth-child(2){
+            grid-column-start: 6;
+            grid-column-end: 9;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .allbox:nth-child(3){
+            grid-column-start: 4;
+            grid-column-end: 7;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .allicon{
+            background: var(--sub-color);
+            height: 10vw;
+            width: 10vw;
+            border-radius: 50%;
+            transform: translateX(12.3vw);
+            margin-top: 1vw;
+        }
+        .allicon img{
+            height: 8vw;
+            width: 8vw;
+            padding: 1.2vw;
+        }   
+        .allbox h1 {
+            text-align: center;
+            margin-top: 2vw;
+            font-weight: 400;
+            font-family: var(--ubuntu);
+            font-size: 2.5vw;     
+        }
+        .allbox p{
+            text-align: center;
+            margin-top: 1vw;
+            font-weight: 200;
+            font-family: var(--ubuntu);
+            font-size: 1.9vw;  
+        }
+    
+    }
+    @media (min-width:1023px) and (max-width:1640px){
+        .allarticle{
+            height: 40vw;
+            background:url(assets/alliances.jpg);
+            background-repeat: no-repeat;
+            background-size: 100vw 40vw;
+        }
+        .allalliance{
+            height: 40vw;
+            align-items: center;
+            background: var(--opacity-mainseven);
+            position: relative;
+            overflow: hidden;
+        }
+        .allhead{
+            color: white;
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 6vw;
+            text-align: center;
+            padding-top: 1vw;
+        }
+        .allboxMain{
+            width: 60vw;
+            margin-top: 5vw;
+            padding-left: 2vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;    
+        }
+        .allbox{
+            height: 17vw;
+            width: 27vw;
+            background: var(--opacity-background);
+            margin-right: 2vw;
+            margin-left: 2vw;
+            border-radius: 0.5vw;
+        }
+        .allicon{
+            background: var(--sub-color);
+            height: 8vw;
+            width: 8vw;
+            border-radius: 50%;
+            transform: translateX(10vw);
+            margin-top: 1vw;
+        }
+        .allicon img{
+            height: 6vw;
+            width: 6vw;
+            padding: 1.2vw;
+        }   
+        .allbox h1 {
+            text-align: center;
+            margin-top: 1vw;
+            font-weight: 400;
+            font-family: var(--ubuntu);
+            font-size: 2vw;     
+        }
+        .allbox p{
+            text-align: center;
+            margin-top: 1vw;
+            font-weight: 200;
+            font-family: var(--ubuntu);
+            font-size: 1.5vw;  
+        }
+        .hide{
+            opacity: 0;
+            transition: all 1s;
+            transform: translateX(-100%);
+        }
+        .show{
+            opacity: 1;
+            transform: translateX(0);
+        } 
+    }
+    @media (min-width:1640px){
+        .allarticle{
+            height: 40vw;
+            background:url(assets/alliances.jpg);
+            background-repeat: no-repeat;
+            background-size: 100vw 40vw;
+        }
+        .allalliance{
+            height: 40vw;
+            align-items: center;
+            background: var(--opacity-mainseven);
+            position: relative;
+            overflow: hidden;
+        }
+        .allhead{
+            color: white;
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 6vw;
+            text-align: center;
+            padding-top: 1vw;
+        }
+        .allboxMain{
+            width: 60vw;
+            margin-top: 5vw;
+            padding-left: 2vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;    
+        }
+        .allbox{
+            height: 17vw;
+            width: 27vw;
+            background: var(--opacity-background);
+            margin-right: 2vw;
+            margin-left: 2vw;
+            border-radius: 0.5vw;
+        }
+        .allicon{
+            background: var(--sub-color);
+            height: 8vw;
+            width: 8vw;
+            border-radius: 50%;
+            transform: translateX(10vw);
+            margin-top: 1vw;
+        }
+        .allicon img{
+            height: 6vw;
+            width: 6vw;
+            padding: 1.2vw;
+        }   
+        .allbox h1 {
+            text-align: center;
+            margin-top: 1vw;
+            font-weight: 400;
+            font-family: var(--ubuntu);
+            font-size: 2vw;     
+        }
+        .allbox p{
+            text-align: center;
+            margin-top: 1vw;
+            font-weight: 200;
+            font-family: var(--ubuntu);
+            font-size: 1.5vw;  
+        }
+        .hide{
+            opacity: 0;
+            transition: all 1s;
+            transform: translateX(-100%);
+        }
+        .show{
+            opacity: 1;
+            transform: translateX(0);
+        }  
+    }
+</style>
+

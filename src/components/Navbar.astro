@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const items=[
+        {
+            title:'Home',
+            path:'/'
+        },
+        {
+            title:'Blog',
+            path:'/posts'
+        },
+    ]
+---
+<div class="head">
+    <div class="logo">
+        <img
+                class="homelogo-img h-12"
+                src="http://samarthmeditech.com/assets/images/logo.png"
+                alt="samarth meditech"
+            />
+    </div>
+    <div class="nav">
+       <ul class="flex">
+        {items.map(item =>(
+            <li><a class="p-4 block hover:bg-gray-700" href={item.path}>{item.title}</a></li>
+        ))}
+       </ul>
+    </div>
+</div>
+<style>
+    .head{
+        height: 110px;
+        display: flex;
+        background: var(--main-color);
+        color: white;
+    }
+    .logo img{
+        width: 200px;
+        height: 80px;
+        margin-left: 50px;
+        margin-top:10px;
+    }
+    .nav{
+        height: 100px;
+        margin-left: auto;
+        margin-top: 0.9vw;
+    }
+</style>

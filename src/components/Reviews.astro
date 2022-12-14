@@ -1,0 +1,538 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+---
+
+<article id="testimonials" class="testarticle">
+    <div class="testhead"><p>What do they say?</p></div>
+    <div class="testcontent"><p>Customer reviews gives us energy to work more and correct our mistakes, thankfully our all most all customers are very happy with Samarth products, and Samarth assures you to give much better than yesterday.</p></div>
+    <div class="testgrid hide">
+        <div class="testbox hide">
+            <div class="testquotes">
+                <p class="testquote">"Ours is a 60 bed hospital with more than 15 resident and visiting Doctors. SM Tejas is the only product in the market which can integrate all aspects of running a hospital. The Doctor's pages are really helpful. The Management gets all reports on daily basis. We can now control and manage every aspect. Thanks to Samarth Meditech and wish them good luck."</p>
+                <p class='testname'>Dr | Venkatesh AL</p>
+                <p class="testwork">Senior Doctor @Heidelberg org.</p>
+            </div>                               
+        </div>
+        <div class="testbox hide">
+            <div class="testquotes">
+                <p class="testquote">"I am really happy with Samarth Meditech Kalpa. All our 4 pharmacies are now connected and SM Kalpa has made our life easy managing which was difficult before. All our Employees are also very happy as the App is so easy to use and maintain. We now save a lot of time and money."</p>
+                <p class='testname'>Mr. Satish Kulkarni</p>
+                <p class="testwork">Manikya medicals Belagavi.</p>
+            </div>                                
+        </div>
+        <div class="testbox hide">
+            <div class="testquotes">
+                <p class="testquote">"I did not trust SM Daksha till I started using it. I am now already used to it and cannot run the clinic without SM Daksha. The scribble pad is a great idea and makes it paperfree and easy. Great job Samarth Meditech for a great product."</p>
+                <p class='testname'>Dr | Sheetal patil</p>
+                <p class="testwork">Chirayu clinic.</p>
+            </div>                                     
+        </div>
+        <div class="testbox hide">
+            <div class="testquotes">
+                <p class="testquote">"The Advanceed Accounting Features SM Shodha are really great! All the features are well thought. We have been looking for these features for long and finally found them in SM Shodha. The support and training from Samarth Meditech has been great and I would recommend SM Shodha to all."</p>
+                <p class='testname'>Mr. Sanjeev Purohit</p>
+                <p class="testwork">Purohit Pharma.</p>
+            </div>
+        </div>
+    </div>
+</article>
+<style>
+    .testarticle{
+        height: 50vw;
+        background: var(--background);
+    }
+    .testhead{
+        color: black;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 4vw;
+        text-align: center;
+        padding-top: 0.8vw;
+        transform: translateY(2vw);
+    }
+    .testcontent{
+        height: 8vw ;
+        text-align: center;
+        font-family: var(--ubuntu);
+        font-weight: 300;
+        font-size: 1.3vw;
+        padding:0 10vw 0 10vw ;
+        color: var(--dark-grey);
+        transform: translateY(2vw); 
+    }
+    .testgrid{
+        width: 95vw;
+        gap:1vw;
+        background: transparent;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 2vw;
+    }
+    
+    .testbox{
+        height: 25vw;
+        background: white;
+        margin-left: 0.5vw;
+        box-sizing: border-box;
+        border: 1px solid var(--main-color);
+        border-radius: 10%;
+        box-shadow: 0.1vw 0.1vw 0.1vw ;
+    }
+    .testbox .testquote{
+        font-family: var(--ubuntu);
+        font-size: 1.1vw;
+        color: var(--dark-grey);
+        text-align: justify;
+        padding: 2vw 1vw 1vw 1vw;
+        
+    }
+    .testquoted_by{
+            
+        height: 9vw;
+    }
+    .testname{
+        margin-top:1vw ;
+        font-family: var(--ubuntu);
+        font-size: 1.1vw;
+        text-align: justify;
+        color: var(--main-color);
+    }
+    .testwork{
+        font-family: var(--ubuntu);
+        font-size: 1.1vw;
+        text-align: justify;
+        color: var(--sub-color);
+    }
+    .testbox:nth-child(2){
+        transition-delay: 500ms;
+    }
+    .testbox:nth-child(3){
+        transition-delay: 800ms;
+    }
+    .testbox:nth-child(4){
+        transition-delay: 1100ms;
+    }
+
+
+
+
+
+
+
+
+    @media (min-width:100px) and (max-width:400px){
+        .testarticle{
+        height: 170vw;
+        background: var(--background);
+    }
+    .testhead{
+        color: black;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 6vw;
+        text-align: center;
+        padding-top: 0.8vw;
+        transform: translateY(2vw);
+    }
+    .testcontent{
+        height: 20vw ;
+        text-align: justify;
+        font-family: var(--poppins);
+        font-weight: 300;
+        font-size: var(--content100);
+        padding:0 10vw 0 10vw ;
+        color: var(--dark-grey);
+        transform: translateY(2vw); 
+    }
+    .testgrid{
+        width: 90vw;
+        gap:1vw;
+        background: transparent;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 4vw;
+    }
+    .testbox{
+        height: 63vw;
+        background: white;
+        margin-left: 0.5vw;
+        box-sizing: border-box;
+        border: 1px solid var(--main-color);
+        border-radius: 10%;
+        box-shadow: 0.1vw 0.1vw 0.1vw ;
+    }
+    .testbox .testquotes{
+        font-family: var(--ubuntu);
+        color: var(--dark-grey);
+        text-align: justify;
+        padding: 2vw 1vw 1vw 1vw;
+        
+    }
+    .testquotes .testquote{
+        height: 50vw;
+        font-size: var(--content100);
+    }
+    .testquotes .testname{
+        margin-top:1vw ;
+        font-family: var(--ubuntu);
+        font-size: 1.9vw;
+        text-align: justify;
+        color: var(--main-color);
+    }
+    .testwork{
+        font-family: var(--ubuntu);
+        font-size: 1.5vw;
+        text-align: justify;
+        color: var(--sub-color);
+    }
+    }
+    @media (min-width:400px) and (max-width:700px){
+        .testarticle{
+        height: 190vw;
+        background: var(--background);
+    }
+    .testhead{
+        color: black;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 6vw;
+        text-align: center;
+        padding-top: 0.8vw;
+        transform: translateY(2vw);
+    }
+    .testcontent{
+        height: 20vw ;
+        text-align: center;
+        font-family: var(--ubuntu);
+        font-weight: 300;
+        font-size: var(--contentmed);
+        padding:0 10vw 0 10vw ;
+        color: var(--dark-grey);
+        transform: translateY(2vw); 
+    }
+    .testgrid{
+        width: 90vw;
+        gap:1vw;
+        background: transparent;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 4vw;
+        margin-top: 3vw;
+    }
+    .testbox{
+        height: 75vw;
+        background: white;
+        margin-left: 0.5vw;
+        box-sizing: border-box;
+        border: 1px solid var(--main-color);
+        border-radius: 10%;
+        box-shadow: 0.1vw 0.1vw 0.1vw ;
+    }
+    .testbox .testquotes{
+        font-family: var(--ubuntu);
+        color: var(--dark-grey);
+        text-align: justify;
+        padding: 2vw 1vw 1vw 1vw;
+        
+        
+    }
+    .testquotes .testquote{
+        height: 59vw;
+        font-size: var(--contentmed);
+    }
+    .testquotes .testname{
+        margin-top:1vw ;
+        font-family: var(--ubuntu);
+        font-size: var(--contentmed);
+        text-align: justify;
+        color: var(--main-color);
+        font-weight: 500;
+    }
+    .testwork{
+        font-family: var(--ubuntu);
+        font-size: 2.5vw;
+        text-align: justify;
+        color: var(--sub-color);
+    }
+    }
+    @media (min-width:700px) and (max-width:950px){
+        .testarticle{
+        height: 200vw;
+        background: var(--background);
+    }
+    .testhead{
+        color: black;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 6vw;
+        text-align: center;
+        padding-top: 0.8vw;
+        transform: translateY(2vw);
+    }
+    .testcontent{
+        height: 19vw ;
+        text-align: center;
+        font-family: var(--ubuntu);
+        font-weight: 300;
+        font-size: var(--contentmed);
+        padding:0 10vw 0 10vw ;
+        color: var(--dark-grey);
+        transform: translateY(2vw); 
+    }
+    .testgrid{
+        width: 90vw;
+        gap:1vw;
+        background: transparent;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 4vw;
+    }
+    .testbox{
+        height: 80vw;
+        background: white;
+        margin-left: 0.5vw;
+        box-sizing: border-box;
+        border: 1px solid var(--main-color);
+        border-radius: 10%;
+        box-shadow: 0.1vw 0.1vw 0.1vw ;
+    }
+    .testbox .testquotes{
+        font-family: var(--ubuntu);
+        color: var(--dark-grey);
+        text-align: justify;
+        padding: 2vw 1vw 1vw 1vw;
+        
+    }
+    .testquotes .testquote{
+        height: 59vw;
+        font-size: var(--contentmed);
+    }
+    .testquotes .testname{
+        margin-top:1vw ;
+        font-family: var(--ubuntu);
+        font-size: var(--contentmed);
+        text-align: justify;
+        color: var(--main-color);
+        font-weight: 500;
+    }
+    .testwork{
+        font-family: var(--ubuntu);
+        font-size: var(--contentmed);
+        text-align: justify;
+        color: var(--sub-color);
+    }
+    
+    }
+    @media (min-width:950px) and (max-width:1023px){
+        .testarticle{
+        height: 190vw;
+        background: var(--background);
+    }
+    .testhead{
+        color: black;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 6vw;
+        text-align: center;
+        padding-top: 0.8vw;
+        transform: translateY(2vw);
+    }
+    .testcontent{
+        height: 19vw ;
+        text-align: center;
+        font-family: var(--ubuntu);
+        font-weight: 300;
+        font-size: var(--contentmed);
+        padding:0 10vw 0 10vw ;
+        color: var(--dark-grey);
+        transform: translateY(2vw); 
+    }
+    .testgrid{
+        width: 90vw;
+        gap:1vw;
+        background: transparent;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 4vw;
+    }
+    .testbox{
+        height: 75vw;
+        background: white;
+        margin-left: 0.5vw;
+        box-sizing: border-box;
+        border: 1px solid var(--main-color);
+        border-radius: 10%;
+        box-shadow: 0.1vw 0.1vw 0.1vw ;
+    }
+    .testbox .testquotes{
+        font-family: var(--ubuntu);
+        color: var(--dark-grey);
+        text-align: justify;
+        padding: 2vw 1vw 1vw 1vw;
+        
+    }
+    .testquotes .testquote{
+        height: 58vw;
+        font-size: var(--contentmed);
+    }
+    .testquotes .testname{
+        margin-top:1vw ;
+        font-family: var(--ubuntu);
+        font-size: var(--contentmed);
+        text-align: justify;
+        color: var(--main-color);
+        font-weight: 500;
+    }
+    .testwork{
+        font-family: var(--ubuntu);
+        font-size: var(--contentmed);
+        text-align: justify;
+        color: var(--sub-color);
+    }  
+    }
+    @media (min-width:1023px) and (max-width:1640px){
+        .testarticle{
+        height: 60vw;
+        background: var(--background);
+    }
+    .testhead{
+        color: black;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 4vw;
+        text-align: center;
+        padding-top: 0.8vw;
+        transform: translateY(2vw);
+    }
+    .testcontent{
+        height: 8vw ;
+        text-align: center;
+        font-family: var(--ubuntu);
+        font-weight: 300;
+        font-size: 1.4vw;
+        padding:0 10vw 0 10vw ;
+        color: var(--dark-grey);
+        transform: translateY(2vw); 
+    }
+    .testgrid{
+        width: 95vw;
+        gap:1vw;
+        background: transparent;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 2vw;
+    }
+    .testbox{
+        height: 40vw;
+        background: white;
+        margin-left: 0.5vw;
+        box-sizing: border-box;
+        border: 1px solid var(--main-color);
+        border-radius: 10%;
+        box-shadow: 0.1vw 0.1vw 0.1vw ;
+    }
+    .testbox .testquotes{
+        font-family: var(--ubuntu);
+        font-size: 1.1vw;
+        color: var(--dark-grey);
+        text-align: justify;
+        padding: 2vw 1vw 1vw 1vw;
+        
+    }
+    .testquotes .testquote{
+        height: 31vw;
+        font-size: 1.4vw;
+    }
+    .testquoted_by{
+               
+        height: 9vw;
+    }
+    .testname{
+        margin-top:1vw ;
+        font-family: var(--ubuntu);
+        font-size: 1.4vw;
+        text-align: justify;
+        color: var(--main-color);
+        font-weight: 500;
+    }
+    .testwork{
+        font-family: var(--ubuntu);
+        font-size: 1.2vw;
+        text-align: justify;
+        color: var(--sub-color);
+    }   
+    }
+    @media (min-width:1640px){
+        .testarticle{
+        height: 50vw;
+        background: var(--background);
+    }
+    .testhead{
+        color: black;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 4vw;
+        text-align: center;
+        padding-top: 0.8vw;
+        transform: translateY(2vw);
+    }
+    .testcontent{
+        height: 8vw ;
+        text-align: center;
+        font-family: var(--ubuntu);
+        font-weight: 300;
+        font-size: 1.4vw;
+        padding:0 10vw 0 10vw ;
+        color: var(--dark-grey);
+        transform: translateY(2vw); 
+    }
+    .testgrid{
+        width: 95vw;
+        gap:1vw;
+        background: transparent;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 2vw;
+    }
+    .testbox{
+        height: 32vw;
+        background: white;
+        margin-left: 0.5vw;
+        box-sizing: border-box;
+        border: 1px solid var(--main-color);
+        border-radius: 10%;
+        box-shadow: 0.1vw 0.1vw 0.1vw ;
+    }
+    .testbox .testquotes{
+        font-family: var(--ubuntu);
+        font-size: 1.1vw;
+        color: var(--dark-grey);
+        text-align: justify;
+        padding: 2vw 1vw 1vw 1vw;
+        
+    }
+    .testquotes .testquote{
+        height: 22vw;
+        font-size: 1.4vw;
+    }
+    .testquoted_by{
+               
+        height: 9vw;
+    }
+    .testname{
+        margin-top:1vw ;
+        font-family: var(--ubuntu);
+        font-size: 1.4vw;
+        text-align: justify;
+        color: var(--main-color);
+        font-weight: 500;
+    }
+    .testwork{
+        font-family: var(--ubuntu);
+        font-size: 1.2vw;
+        text-align: justify;
+        color: var(--sub-color);
+    } 
+    }
+</style>
