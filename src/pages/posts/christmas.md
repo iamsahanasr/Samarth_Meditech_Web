@@ -3,7 +3,7 @@ layout: '../../layouts/BlogPost.astro'
 title: Christmas
 tags: ['holiday' , 'festivals' , 'december']
 date: 2022-11-25
-image: "assets/Chandan.jpg"
+image: "src/assets/Chandan.jpg"
 ---
 Christmas is a cultural festivity that entails a lot of preparations. It is a public holiday and so people get a Christmas break to celebrate it.
 
