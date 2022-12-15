@@ -1,6 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
+import Sharan from '../assets/Sharan.jpg'
+import Dattu from '../assets/Dattu.jpg'
+import Chandan from '../assets/Chandan.jpg'
+import Shirish from '../assets/Shirish.jpg'
+import sudesh_naik from '../assets/sudesh_naik.jpg'
+import Anand from '../assets/Anand.jpg'
+import Manju from '../assets/Manju.jpg'
+import subramanya from '../assets/subramanya.jpg'
 ---
 
 <article class="teamarticle">
@@ -8,7 +15,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="teamgrid">
         <div class="teamteam-mem">
             <div class="teamteam-img">
-                <img src="src/assets/Sharan.jpg" alt="">
+                <img src={Sharan} alt="">
             </div>
             <div class="teamcaption">
                 <div class="teamp"><p>Sharangouda Agni</p></div>               
@@ -18,7 +25,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="teamteam-mem">
             <div class="teamteam-img">
-                <img src="src/assets/Dattu.jpg" alt="">
+                <img src={Dattu} alt="">
             </div>
             <div class="teamcaption">
                 <div class="teamp"><p>Narasimhadatta patil</p></div>
@@ -28,7 +35,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="teamteam-mem">
             <div class="teamteam-img">
-                <img src="src/assets/Chandan.jpg" alt="">
+                <img src={Chandan} alt="">
             </div>
             <div class="teamcaption">
                 <div class="teamp"><p>Chandan Purohit</p></div>        
@@ -38,7 +45,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="teamteam-mem">
             <div class="teamteam-img">
-                <img src="src/assets/Shirish.jpg" alt="">
+                <img src={Shirish} alt="">
             </div>
             <div class="teamcaption">
                 <div class="teamp"><p>Shirish Morab</p></div>          
@@ -53,7 +60,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="advgrid">
         <div class="advadv-mem">
             <div class="advadv-img">
-                <img src="src/assets/sudesh_naik.jpg" alt="">
+                <img src={sudesh_naik} alt="">
             </div>
             <div class="advcaptionAd">
                 <div class="advp"><p>Sudhesh Nayak</p></div>
@@ -63,7 +70,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="advadv-mem">
             <div class="advadv-img">
-                <img src="src/assets/Anand.jpg" alt="">
+                <img src={Anand} alt="">
             </div>
             <div class="advcaptionAd">
                 <div class="advp"><p>Anand Kulkarni </p></div>
@@ -73,7 +80,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="advadv-mem">
             <div class="advadv-img">
-                <img src="src/assets/Manju.jpg" alt="">
+                <img src={Manju} alt="">
             </div>
             <div class="advcaptionAd">
                 <div class="advp"><p>Manjunath Yalagi </p></div>
@@ -83,7 +90,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="advadv-mem">
             <div class="advadv-img">
-                <img src="src/assets/subramanya.jpg" alt="">
+                <img src={subramanya} alt="">
             </div>
             <div class="advcaptionAd">
                 <div class="advp"><p>Subramanya Mujumdar</p></div>
@@ -146,9 +153,10 @@ import Layout from '../layouts/Layout.astro';
     }
     .advadvisories{
         height: 58vw;
-        background: url(src/assets/advisories2.jpg);
+        background: url('/advisories2.jpg');
         background-size: 100vw 30vw;
         background-repeat: no-repeat;
+        background-color: var(--background);
     }
     .adv-head{
         font-family: var(--poppins);
@@ -320,7 +328,7 @@ import Layout from '../layouts/Layout.astro';
         }
         .advadvisories{
             height: 200vw;
-            background: url(src/assets/advisories2.jpg);
+            background: url('/advisories2.jpg');
             background-size: 100vw 205vw;
             background-repeat: no-repeat;
         }
@@ -492,7 +500,7 @@ import Layout from '../layouts/Layout.astro';
     }
     .advadvisories{
         height: 240vw;
-        background: url(src/assets/advisories2.jpg);
+        background: url('/advisories2.jpg');
         background-size: 100vw 245vw;
         background-repeat: no-repeat;
     }
@@ -663,7 +671,7 @@ import Layout from '../layouts/Layout.astro';
     }
     .advadvisories{
         height: 234vw;
-        background: url(src/assets/advisories2.jpg);
+        background: url('/advisories2.jpg');
         background-size: 100vw 234vw;
         background-repeat: no-repeat;
     }
@@ -830,7 +838,7 @@ import Layout from '../layouts/Layout.astro';
     }
     .advadvisories{
         height: 170vw;
-        background: url(src/assets/advisories2.jpg);
+        background: url('/advisories2.jpg');
         background-size: 100vw 170vw;
         background-repeat: no-repeat;
     }
@@ -999,7 +1007,7 @@ import Layout from '../layouts/Layout.astro';
     .advadvisories{
         width: 100vw;
         height: 65vw;
-        background: url(src/assets/advisories2.jpg);
+        background: url('/advisories2.jpg');
         background-size: 100vw 30vw;
         background-repeat: no-repeat;
         box-sizing: content-box;
@@ -1161,7 +1169,7 @@ import Layout from '../layouts/Layout.astro';
     .advadvisories{
         width: 100vw;
         height: 65vw;
-        background: url(src/assets/advisories2.jpg);
+        background: url('/advisories2.jpg');
         background-size: 100vw 30vw;
         background-repeat: no-repeat;
         box-sizing: content-box;

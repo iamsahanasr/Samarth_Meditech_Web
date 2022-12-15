@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import alliances_icon from '../assets/alliances_icon.png'
 
 ---
 <article class="allarticle">
@@ -7,17 +8,17 @@ import Layout from '../layouts/Layout.astro';
         <h1 class="allhead">Samarth Meditech - Alliances</h1>
         <div class="allboxMain hide">
             <div class="allbox hide">
-                <div class="allicon"><img src="src/assets/alliances_icon.png" alt=""></div>
+                <div class="allicon"><img src={alliances_icon} alt=""></div>
                 <h1>Satvik SoftTech</h1>
                 <p>#16 2nd Cross Vidyanagar hubli-560031</p>
             </div>
             <div class="allbox hide">
-                <div class="allicon"><img src="src/assets/alliances_icon.png" alt=""></div>
+                <div class="allicon"><img src={alliances_icon} alt=""></div>
                 <h1>Eternal Software solutions.</h1>
                 <p>Beside Karnataka Bank, cotten market Hubli-560029</p>
             </div>
             <div class="allbox hide">
-                <div class="allicon"><img src="src/assets/alliances_icon.png" alt=""></div>
+                <div class="allicon"><img src={alliances_icon} alt=""></div>
                 <h1>Akshay infotech.</h1>
                 <p>Mayur Estate keshwapura Hubli-580023</p>
             </div>
@@ -28,7 +29,7 @@ import Layout from '../layouts/Layout.astro';
 <style>
     .allarticle{
         height: 32vw;
-        background:url(src/src/assets/alliances.jpg);
+        background-image:url('/alliances.jpg');
         background-repeat: no-repeat;
         background-size: 100vw 35vw;
     }
@@ -117,13 +118,13 @@ import Layout from '../layouts/Layout.astro';
  
     @media (min-width:100px) and (max-width:400px){
         .allarticle{
-            height: 110vw;
-            background:url(src/assets/alliances.jpg);
+            height: 123vw;
+            background-image:url('/alliances.jpg');
             background-repeat: no-repeat;
-            background-size: 100vw 110vw;
+            background-size: 100vw 123vw;
         }
         .allalliance{
-            height: 110vw;
+            height: 123vw;
             align-items: center;
             background: var(--opacity-mainseven);
             position: relative;
@@ -139,7 +140,7 @@ import Layout from '../layouts/Layout.astro';
         }
 
         .allboxMain{
-            height: 17vw;
+            height: 21vw;
             width: 60vw;
             margin-top: 5vw;
             padding-left: 24vw;
@@ -148,7 +149,7 @@ import Layout from '../layouts/Layout.astro';
             gap: 4vw;
         }
         .allbox{
-            height: 28vw;
+            height: 31vw;
             width: 45vw;
             background: var(--opacity-background);
             margin-right: 2vw;
@@ -185,13 +186,13 @@ import Layout from '../layouts/Layout.astro';
     }
     @media (min-width:400px) and (max-width:700px){
         .allarticle{
-            height: 115vw;
-            background:url(src/assets/alliances.jpg);
+            height: 120vw;
+            background-image:url('/alliances.jpg');
             background-repeat: no-repeat;
-            background-size: 100vw 114vw;
+            background-size: 100vw 120vw;
         }
         .allalliance{
-            height: 114vw;
+            height: 120vw;
             align-items: center;
             background: var(--opacity-mainseven);
             position: relative;
@@ -216,7 +217,7 @@ import Layout from '../layouts/Layout.astro';
             gap: 4vw;
         }
         .allbox{
-            height: 28vw;
+            height: 31vw;
             width: 45vw;
             background: var(--opacity-background);
             margin-right: 2vw;
@@ -253,13 +254,13 @@ import Layout from '../layouts/Layout.astro';
     }
     @media (min-width:700px) and (max-width:950px){
         .allarticle{
-            height: 100vw;
-            background:url(src/assets/alliances.jpg);
+            height: 130vw;
+            background-image:url('/alliances.jpg');
             background-repeat: no-repeat;
-            background-size: 100vw 100vw;
+            background-size: 100vw 130vw;
         }
         .allalliance{
-            height: 100vw;
+            height: 130vw;
             align-items: center;
             background: var(--opacity-mainseven);
             position: relative;
@@ -282,7 +283,7 @@ import Layout from '../layouts/Layout.astro';
             gap: 4vw;
         }
         .allbox{
-            height: 23vw;
+            height: 26vw;
             width: 45vw;
             background: var(--opacity-background);
             margin-right: 2vw;
@@ -319,13 +320,13 @@ import Layout from '../layouts/Layout.astro';
     }
     @media (min-width:950px) and (max-width:1023px){
         .allarticle{
-            height: 70vw;
-            background:url(src/assets/alliances.jpg);
+            height: 72vw;
+            background-image:url('/alliances.jpg');
             background-repeat: no-repeat;
-            background-size: 100vw 70vw;
+            background-size: 100vw 72vw;
         }
         .allalliance{
-            height: 70vw;
+            height: 72vw;
             align-items: center;
             background: var(--opacity-mainseven);
             position: relative;
@@ -348,7 +349,7 @@ import Layout from '../layouts/Layout.astro';
         }
 
         .allbox{
-            height: 23vw;
+            height: 29vw;
             width: 35vw;
             background: var(--opacity-background);
             border-radius: 0.5vw;
@@ -403,7 +404,7 @@ import Layout from '../layouts/Layout.astro';
     @media (min-width:1023px) and (max-width:1640px){
         .allarticle{
             height: 40vw;
-            background:url(src/assets/alliances.jpg);
+            background-image:url('/alliances.jpg');
             background-repeat: no-repeat;
             background-size: 100vw 40vw;
         }
@@ -430,7 +431,7 @@ import Layout from '../layouts/Layout.astro';
             grid-template-columns: 1fr 1fr 1fr;    
         }
         .allbox{
-            height: 17vw;
+            height: 19vw;
             width: 27vw;
             background: var(--opacity-background);
             margin-right: 2vw;
@@ -477,7 +478,7 @@ import Layout from '../layouts/Layout.astro';
     @media (min-width:1640px){
         .allarticle{
             height: 40vw;
-            background:url(src/assets/alliances.jpg);
+            background-image:url('/alliances.jpg');
             background-repeat: no-repeat;
             background-size: 100vw 40vw;
         }
@@ -504,7 +505,7 @@ import Layout from '../layouts/Layout.astro';
             grid-template-columns: 1fr 1fr 1fr;    
         }
         .allbox{
-            height: 17vw;
+            height: 19vw;
             width: 27vw;
             background: var(--opacity-background);
             margin-right: 2vw;

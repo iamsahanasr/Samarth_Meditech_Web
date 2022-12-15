@@ -1,6 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
+import seamless from '../assets/seamless.png'
+import reduce_time from '../assets/reduce_time.png'
+import personalised from '../assets/personalised.png'
+import responsive from '../assets/responsive.png'
 ---
 
 <section class="aboutboxes aboutsection" id='about'>
@@ -51,25 +54,25 @@ import Layout from '../layouts/Layout.astro';
     <div ><p class="p">Samarth Meditech confers</p></div>
     <div class="aboutconfer">
         <div class="aboutconfer-box">
-            <img class='aboutconfer-img  ' src="src/assets/seamless.png" alt="" >
+            <img class='aboutconfer-img  ' src={seamless} alt="seamless" >
             <hr class='aboutunderline'>
             <h1 class="aboutcapitalize">seamless service</h1>
             <p>Medical/Healthcare business grow by controlling cost and maximizing profits at the same time by keeping the customers happy . For this Samarth Meditech provides seamless services</p>
         </div>
         <div class="aboutconfer-box">
-            <img class='aboutconfer-img ' src="src/assets/reduce_time.png" alt="">
+            <img class='aboutconfer-img ' src={reduce_time} alt="reduce_time">
             <hr class='aboutunderline'>
             <h1 class="aboutcapitalize">reduce service time</h1>
             <p>Samarth Meditech Applications helps you put processes in place no matter how small the business that can reduce service time and even give full patient/ customer history in a click</p>
         </div>
         <div class="aboutconfer-box">
-            <img class='aboutconfer-img ' src="src/assets/personalised.png" alt="">
+            <img class='aboutconfer-img ' src={personalised} alt="personalised">
             <hr class='aboutunderline'>
             <h1 class="aboutcapitalize">personalized service</h1>
             <p>Samarth Meditech make applications that are truly personalized like using messaging features for reminders, thank you messages and many more.</p>
         </div>
         <div class="aboutconfer-box">
-            <img class='aboutconfer-img ' src="src/assets/responsive.png" alt="">
+            <img class='aboutconfer-img ' src={responsive} alt="responsive">
             <hr class='aboutunderline'>
             <h1 class="aboutcapitalize">highly responsive solutions</h1>
             <p>Pain points and challenges are isolated by working with Industry Experts, Medicine Practitioners, hence Samarth Meditech applications come up with highly responsive solutions</p>

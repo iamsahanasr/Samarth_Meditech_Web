@@ -1,5 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import facebook from '../assets/icons/facebook.png'
+import linkedin from '../assets/icons/linkedin.png'
+import twitter from '../assets/icons/twitter.png'
 ---
 
 <article class="talktalk" id="contact">
@@ -37,17 +40,17 @@ import Layout from '../layouts/Layout.astro';
 </article>
 <footer class="talkend">
     <div class="talkicons">
-        <div class="talkicon"><img src="src/assets/icons/facebook.png" alt=""></div>
-        <div class="talkicon"><img src="src/assets/icons/linkedin.png" alt=""></div>
-        <div class="talkicon"><img src="src/assets/icons/twitter.png" alt=""></div>
+        <div class="talkicon"><img src={facebook} alt="facebook"></div>
+        <div class="talkicon"><img src={linkedin} alt="linkedin"></div>
+        <div class="talkicon"><img src={twitter} alt="twitter"></div>
     </div>
     <hr class="talkhr">
-    <div class="talkcopyright"><p>COPYRIGHT © 2020 SAMARTH MEDITECH PVT LTD COMPANY</p></div>
+    <div class="talkcopyright"><p>COPYRIGHT &#169; 2020 SAMARTH MEDITECH PVT LTD COMPANY</p></div>
 </footer>
 <style>
     .talktalk{
         height: 48vw;
-        background: url(src/assets/contactUs.jpg);
+        background: url('/contactUs.jpg');
         background-size: 100vw 48vw;
         background-repeat: no-repeat;
     }
@@ -171,7 +174,7 @@ import Layout from '../layouts/Layout.astro';
         position: relative;
     }
     .talkend{
-        height: 10vw;
+        height: 6vw;
         background: var(--sub-color);
     }
     .talkicons{
@@ -221,7 +224,7 @@ import Layout from '../layouts/Layout.astro';
         .talktalk{
         height: 120vw;
         width: 100vw;
-        background: url(src/assets/contactUs.jpg);
+        background: url('/contactUs.jpg');
         background-size: 100vw 120vw;
         background-repeat: no-repeat;
         }
@@ -381,7 +384,7 @@ import Layout from '../layouts/Layout.astro';
         .talktalk{
         height: 113vw;
         width: 100vw;
-        background: url(src/assets/contactUs.jpg);
+        background: url('/contactUs.jpg');
         background-size: 100vw 113vw;
         background-repeat: no-repeat;
         }
@@ -541,7 +544,7 @@ import Layout from '../layouts/Layout.astro';
         .talktalk{
             height: 113vw;
             width: 100vw;
-            background: url(src/assets/contactUs.jpg);
+            background: url('/contactUs.jpg');
             background-size: 100vw 113vw;
             background-repeat: no-repeat;
         }
@@ -701,7 +704,7 @@ import Layout from '../layouts/Layout.astro';
         .talktalk{
             height: 113vw;
             width: 100vw;
-            background: url(src/assets/contactUs.jpg);
+            background: url('/contactUs.jpg');
             background-size: 100vw 113vw;
             background-repeat: no-repeat;
         }
@@ -861,7 +864,7 @@ import Layout from '../layouts/Layout.astro';
         .talktalk{
             height: 90vw;
             width: 100vw;
-            background: url(src/assets/contactUs.jpg);
+            background: url('/contactUs.jpg');
             background-size: 100vw 113vw;
             background-repeat: no-repeat;
         }
@@ -983,7 +986,7 @@ import Layout from '../layouts/Layout.astro';
             transform: translateX(10vw);
         }
         .talkend{
-            height: 15vw;
+            height: 13vw;
             background: var(--sub-color);
         }
         .talkicons{
@@ -1011,7 +1014,7 @@ import Layout from '../layouts/Layout.astro';
             color: white;
             font-size:2vw;
             position: absolute;
-            transform: translateX(40vw);
+            transform: translateX(43vw);
         }
         .talkcopyright{
             transform: translateY(4.5vw);
@@ -1024,7 +1027,7 @@ import Layout from '../layouts/Layout.astro';
         .talktalk{
             height: 90vw;
             width: 100vw;
-            background: url(src/assets/contactUs.jpg);
+            background: url('/contactUs.jpg');
             background-size: 100vw 113vw;
             background-repeat: no-repeat;
         }
