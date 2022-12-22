@@ -24,16 +24,97 @@ posts=posts.sort((a:Post, b:Post): number =>{
 });
 ---
 {posts.map(post => (
-    <div class="post">
+    <div class="post ">
         {post.frontmatter.draft &&
         <p class="bg-red-700 text-white inline-block px-2">DRAFT</p>}
-        <a class="text-blue-700 hover:underline" href={post.url}>{post.frontmatter.title}</a>
-        <p>{formatDate(post.frontmatter.date)}</p>
+        <a class="list text-blue-700 hover:underline" href={post.url}>{post.frontmatter.title}</a>
+        <p class="date">{formatDate(post.frontmatter.date)}</p>
     </div>
 ))}
 <style>
     .post{
         height: 100px;
 
+    }
+    .list{
+        font-size: 8vw;
+    }
+    @media (min-width:100px) and (max-width:400px){
+        .post{
+            height: 20vw;
+        }
+        .list{
+        font-size: 7vw;
+        }  
+        .date{
+            font-size: 5vw;
+            position: relative;
+            top: -1vw;
+        }
+    }
+    @media (min-width:400px) and (max-width:700px){
+        .post{
+            height: 19vw;
+        }
+        .list{
+        font-size: 6.5vw;
+        }  
+        .date{
+            font-size: 4vw;
+            position: relative;
+            top: -1vw;
+        }
+    }
+    @media (min-width:700px) and (max-width:950px){
+        .post{
+            height: 16vw;
+        }
+        .list{
+        font-size: 5vw;
+        }  
+        .date{
+            font-size: 3vw;
+            position: relative;
+            top: -1vw;
+        }
+    }
+    @media (min-width:950px) and (max-width:1023px){
+        .post{
+            height: 16vw;
+        }
+        .list{
+        font-size: 5vw;
+        }  
+        .date{
+            font-size: 3vw;
+            position: relative;
+            top: -1vw;
+        }
+    }
+    @media (min-width:1023px) and (max-width:1650px){
+        .post{
+            height: 12vw;
+        }
+        .list{
+        font-size: 3vw;
+        }  
+        .date{
+            font-size: 2vw;
+            position: relative;
+            top: -1vw;
+        }
+    }
+    @media (min-width:1650px){
+        .post{
+            height: 12vw;
+        }
+        .list{
+        font-size: 4vw;
+        }  
+        .date{
+            font-size: 2vw;
+            position: relative;
+            top: -1vw;
+        }
     }
 </style>

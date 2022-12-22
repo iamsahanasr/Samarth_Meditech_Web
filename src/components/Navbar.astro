@@ -13,15 +13,15 @@ const items=[
         },
     ]
 ---
-<div class="container">
+<div class="container-fluid">
     <div class="head">
         <div class="logo">
             <img class="homelogo-img h-12" src={logo} alt="samarth meditech"/>
         </div>
         <div class="nav">
-        <ul class="flex">
+        <ul class="flex gap-4">
             {items.map(item =>(
-                <li><a class="p-4 block hover:bg-gray-700" href={item.path}>{item.title}</a></li>
+                <li><a class="p-1 block hover:bg-gray-700" href={item.path}>{item.title}</a></li>
             ))}
         </ul>
         </div>
@@ -30,7 +30,7 @@ const items=[
 <style>
     .container{
         width: 100vw;
-        overflow-x: hidden;
+        overflow: hidden;
     }
     .head{
         height: 110px;
@@ -48,5 +48,122 @@ const items=[
         height: 100px;
         margin-left: auto;
         margin-top: 0.9vw;
+    } 
+    
+    @media (min-width:100px) and (max-width:400px){
+        .head{
+            height: 90px;
+            display: flex;
+            background: var(--main-color);
+            color: white;
+        }
+        .logo img{
+            width: 40vw;
+            height:60px;
+            margin-left: 20px;
+            margin-top:10px;
+        }
+        .nav{
+            margin-left: auto;
+            margin-top: 8vw;
+            margin-bottom: 3vw;
+            font-size: 8vw;
+        }
+    }
+    @media (min-width:400px) and (max-width:700px){
+        .head{
+            height: 100px;
+            display: flex;
+            background: var(--main-color);
+            color: white;
+        }
+        .logo img{
+            width: 150px;
+            height:70px;
+            margin-left: 20px;
+            margin-top:10px;
+        }
+        .nav{
+            margin-left: auto;
+            margin-top: 25px;
+            margin-bottom: 3vw;
+            font-size: 30px;
+        }
+    }
+    @media (min-width:700px) and (max-width:950px){
+        .head{
+            height: 120px;
+            display: flex;
+            background: var(--main-color);
+            color: white;
+        }
+        .logo img{
+            width: 170px;
+            height:90px;
+            margin-left: 20px;
+            margin-top:10px;
+        }
+        .nav{
+            margin-left: auto;
+            margin-top: 40px;
+            font-size: 40px;
+        }
+    }
+    @media (min-width:950px) and (max-width:1023px){
+        .head{
+            height: 150px;
+            display: flex;
+            background: var(--main-color);
+            color: white;
+        }
+        .logo img{
+            width: 210px;
+            height:100px;
+            margin-left: 20px;
+            margin-top:10px;
+        }
+        .nav{
+            margin-left: auto;
+            margin-top: 35px;
+            font-size: 50px;
+        }
+    }
+    @media (min-width:1023px) and (max-width:1650px){
+        .head{
+            height: 120px;
+            display: flex;
+            background: var(--main-color);
+            color: white;
+        }
+        .logo img{
+            width: 190px;
+            height:90px;
+            margin-left: 20px;
+            margin-top:10px;
+        }
+        .nav{
+            margin-left: auto;
+            margin-top: 40px;
+            font-size: 40px;
+        }
+    }
+    @media (min-width:1650px){
+        .head{
+            height: 120px;
+            display: flex;
+            background: var(--main-color);
+            color: white;
+        }
+        .logo img{
+            width: 190px;
+            height:90px;
+            margin-left: 20px;
+            margin-top:10px;
+        }
+        .nav{
+            margin-left: auto;
+            margin-top: 45px;
+            font-size: 30px;
+        }
     }
 </style>

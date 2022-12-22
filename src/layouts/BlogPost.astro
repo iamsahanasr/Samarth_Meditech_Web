@@ -23,12 +23,99 @@ const { title , date , draft ,tags}=Astro.props.frontmatter;
         <div class="">
             {tags.map(tag=>(<a class="mr-2 uppercase text-blue-500" href={`/posts/tag/${tag.toLocaleLowerCase()}`}>#<span class="font-bold">{tag}</span></a>))}
         </div>}
-        <h1 class="">{title}</h1>
-        <p>{formatDate(date)}</p>
+        <h1 class="list">{title}</h1>
+        <p class="date">{formatDate(date)}</p>
     </div>
-    <div class="prose">
+    <br>
+    <div class="prose text-justify pr-5">
         <slot/>
     </div>
     
 </Base>  
+<style>
+    .list{
+        font-size: 7vw;
+    }
+    .date{
+            font-size: 5vw;
+            position: relative;
+            top: -1vw;
+        }
+    @media (min-width:100px) and (max-width:400px){
+        
+        .list{
+        font-size: 7vw;
+        }  
+        .date{
+            font-size: 5vw;
+            position: relative;
+            top: -1vw;
+        }
+    }
+    @media (min-width:400px) and (max-width:700px){
+        .post{
+            height: 19vw;
+        }
+        .list{
+        font-size: 6.5vw;
+        }  
+        .date{
+            font-size: 4vw;
+            position: relative;
+            top: -1vw;
+        }
+    }
+    @media (min-width:700px) and (max-width:950px){
+        .post{
+            height: 16vw;
+        }
+        .list{
+        font-size: 5vw;
+        }  
+        .date{
+            font-size: 3vw;
+            position: relative;
+            top: -1vw;
+        }
+    }
+    @media (min-width:950px) and (max-width:1023px){
+        .post{
+            height: 16vw;
+        }
+        .list{
+        font-size: 5vw;
+        }  
+        .date{
+            font-size: 3vw;
+            position: relative;
+            top: -1vw;
+        }
+    }
+    @media (min-width:1023px) and (max-width:1650px){
+        .post{
+            height: 12vw;
+        }
+        .list{
+        font-size: 4vw;
+        }  
+        .date{
+            font-size: 2vw;
+            position: relative;
+            top: -1vw;
+        }
+    }
+    @media (min-width:1650px){
+        .post{
+            height: 12vw;
+        }
+        .list{
+        font-size: 4vw;
+        }  
+        .date{
+            font-size: 2vw;
+            position: relative;
+            top: -1vw;
+        }
+    }
+</style>
   
