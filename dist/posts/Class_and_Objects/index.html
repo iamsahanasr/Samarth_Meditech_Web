@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="en" class="astro-ZNFA6NC2">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog-post/blog</title>
+    
+<link rel="stylesheet" href="/assets/72440251.1db63d59.css" />
+<link rel="stylesheet" href="/assets/2c055845.323e3941.css" /></head>
+<body class="astro-ZNFA6NC2">
+    <div class="container-fluid astro-YN4PXBPJ">
+    <div class="head astro-YN4PXBPJ">
+        <div class="logo astro-YN4PXBPJ">
+            <img class="homelogo-img h-12 astro-YN4PXBPJ" src="/assets/logo.653b5e59.png" alt="samarth meditech">
+        </div>
+        <div class="nav astro-YN4PXBPJ">
+        <ul class="flex gap-4 astro-YN4PXBPJ">
+            <li class="astro-YN4PXBPJ"><a class="p-1 block hover:bg-gray-700 astro-YN4PXBPJ" href="/">Home</a></li><li class="astro-YN4PXBPJ"><a class="p-1 block hover:bg-gray-700 astro-YN4PXBPJ" href="/posts">Blog</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+    <div class=" posts max-w-5xl mx-auto mt-5 pl-3 astro-ZNFA6NC2">
+        <div class=" astro-GOHMXWBF">
+        
+        <div class=" astro-GOHMXWBF">
+            <a class="tag mr-2 uppercase text-blue-500 astro-GOHMXWBF" href="/posts/tag/python">#<span class="font-bold astro-GOHMXWBF">python</span></a><a class="tag mr-2 uppercase text-blue-500 astro-GOHMXWBF" href="/posts/tag/programming">#<span class="font-bold astro-GOHMXWBF">programming</span></a><a class="tag mr-2 uppercase text-blue-500 astro-GOHMXWBF" href="/posts/tag/class">#<span class="font-bold astro-GOHMXWBF">class</span></a><a class="tag mr-2 uppercase text-blue-500 astro-GOHMXWBF" href="/posts/tag/object">#<span class="font-bold astro-GOHMXWBF">object</span></a>
+        </div>
+        <h1 class="list astro-GOHMXWBF">Class and Objects</h1>
+        <p class="date astro-GOHMXWBF">5 November 2022</p>
+    </div><br class="astro-GOHMXWBF"><div class="prose text-justify  astro-GOHMXWBF">
+        <p>Creating a class in python is pretty simple. Here is an example which creates a class called Student.</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">class Student:</span></span>
+<span class="line"><span style="color: #c9d1d9">  pass</span></span></code></pre>
+<p>To create an instance of the class, just use the class as of it were a function, as shown.</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">student1 = Student()</span></span></code></pre>
+<p>Now we have a new object called student1 which is an instance of Student class. We can give this student a name and age,</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">student1.name = "sathvik"</span></span>
+<span class="line"><span style="color: #c9d1d9">student1.age = 22</span></span></code></pre>
+<p>However, the name and age attributes are present in only the student1 object, not in all objects created as students. Since every student has a name and age, we can make those attributes part of the class.</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">class Student:</span></span>
+<span class="line"><span style="color: #c9d1d9">  def __init__(self,name,age):</span></span>
+<span class="line"><span style="color: #c9d1d9">    self.name = name</span></span>
+<span class="line"><span style="color: #c9d1d9">    self.age = age</span></span></code></pre>
+<p>Now we can start creating new students with different names and ages as;</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">student1 = Student('sathvik',22)</span></span>
+<span class="line"><span style="color: #c9d1d9">student2 = Student('chandan',2)</span></span>
+<span class="line"><span style="color: #c9d1d9">print("Student1 data ",student1.age,student1.name)</span></span>
+<span class="line"><span style="color: #c9d1d9">print("Student2 data ",student2.age,student2.name);</span></span></code></pre>
+<p>Every method in a class is passed a reference to the instance by default, and thus we need to have a parameter to hold it. We have used ‘self’ in our example to hold the reference to the current instance.</p>
+<p>The __init__  method behaves like a constructor of the Student class, which takes the name and age, and creates a new student object with the given name and age.</p>
+    </div>
+    </div>
+</body></html>  

@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en" class="astro-ZNFA6NC2">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog-post/blog</title>
+    
+<link rel="stylesheet" href="/assets/72440251.1db63d59.css" />
+<link rel="stylesheet" href="/assets/2c055845.323e3941.css" /></head>
+<body class="astro-ZNFA6NC2">
+    <div class="container-fluid astro-YN4PXBPJ">
+    <div class="head astro-YN4PXBPJ">
+        <div class="logo astro-YN4PXBPJ">
+            <img class="homelogo-img h-12 astro-YN4PXBPJ" src="/assets/logo.653b5e59.png" alt="samarth meditech">
+        </div>
+        <div class="nav astro-YN4PXBPJ">
+        <ul class="flex gap-4 astro-YN4PXBPJ">
+            <li class="astro-YN4PXBPJ"><a class="p-1 block hover:bg-gray-700 astro-YN4PXBPJ" href="/">Home</a></li><li class="astro-YN4PXBPJ"><a class="p-1 block hover:bg-gray-700 astro-YN4PXBPJ" href="/posts">Blog</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+    <div class=" posts max-w-5xl mx-auto mt-5 pl-3 astro-ZNFA6NC2">
+        <div class=" astro-GOHMXWBF">
+        
+        <div class=" astro-GOHMXWBF">
+            <a class="tag mr-2 uppercase text-blue-500 astro-GOHMXWBF" href="/posts/tag/python">#<span class="font-bold astro-GOHMXWBF">python</span></a><a class="tag mr-2 uppercase text-blue-500 astro-GOHMXWBF" href="/posts/tag/variables">#<span class="font-bold astro-GOHMXWBF">variables</span></a><a class="tag mr-2 uppercase text-blue-500 astro-GOHMXWBF" href="/posts/tag/class">#<span class="font-bold astro-GOHMXWBF">class</span></a><a class="tag mr-2 uppercase text-blue-500 astro-GOHMXWBF" href="/posts/tag/programming">#<span class="font-bold astro-GOHMXWBF">programming</span></a>
+        </div>
+        <h1 class="list astro-GOHMXWBF">Class Variables And Methods</h1>
+        <p class="date astro-GOHMXWBF">2 November 2022</p>
+    </div><br class="astro-GOHMXWBF"><div class="prose text-justify  astro-GOHMXWBF">
+        <p>Python also supports creation of class variables. Here is an example for the same</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">class Student:</span></span>
+<span class="line"><span style="color: #c9d1d9">  count = 0</span></span>
+<span class="line"><span style="color: #c9d1d9">  def __init__(self):</span></span>
+<span class="line"><span style="color: #c9d1d9">    Student.count += 1</span></span>
+<span class="line"><span style="color: #c9d1d9">    print(str(Student.count) + ' students created so far')</span></span>
+<span class="line"><span style="color: #c9d1d9">    </span></span>
+<span class="line"><span style="color: #c9d1d9">s1 = Student() //prints 1 students created so far</span></span>
+<span class="line"><span style="color: #c9d1d9">s2 = Student() //prints 2 students created so far</span></span></code></pre>
+<p>In this example, we have a Student class which contains an attribute called <strong>count</strong>. This is a class variable. We can access it through the class as <code>Student.count</code>. We have incremented this count value in the __init__ function.
+Class variables are common to all objects. Thus, if a class variable is modified in a object all other objects will also see the modified value.</p>
+<p>##Class methods</p>
+<p>Class methods or static methods can be created using the @staticmethod decorator as shown in the following example:</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">class Student:</span></span>
+<span class="line"><span style="color: #c9d1d9">  count = 0</span></span>
+<span class="line"><span style="color: #c9d1d9">  def __init__(self):</span></span>
+<span class="line"><span style="color: #c9d1d9">    Student.count += 1</span></span>
+<span class="line"><span style="color: #c9d1d9">   </span></span>
+<span class="line"><span style="color: #c9d1d9">  @staticmethod</span></span>
+<span class="line"><span style="color: #c9d1d9">  def getStudentCount(self):</span></span>
+<span class="line"><span style="color: #c9d1d9">    print(Student.count)</span></span>
+<span class="line"><span style="color: #c9d1d9">  </span></span>
+<span class="line"><span style="color: #c9d1d9">s1 = Student() //prints 1 students created so far</span></span>
+<span class="line"><span style="color: #c9d1d9">s2 = Student() //prints 2 students created so far</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">Student.getStudentCount() //prints 2</span></span></code></pre>
+<p>Just like in other object oriented programming languages, class variables and methods can be accessed via the class names themselves.</p>
+    </div>
+    </div>
+</body></html>  

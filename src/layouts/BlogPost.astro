@@ -21,13 +21,13 @@ const { title , date , draft ,tags}=Astro.props.frontmatter;
         <p class="bg-red-700 text-white inline-block px-2">DRAFT</p>}
         {tags &&
         <div class="">
-            {tags.map(tag=>(<a class="mr-2 uppercase text-blue-500" href={`/posts/tag/${tag.toLocaleLowerCase()}`}>#<span class="font-bold">{tag}</span></a>))}
+            {tags.map(tag=>(<a class="tag mr-2 uppercase text-blue-500" href={`/posts/tag/${tag.toLocaleLowerCase()}`}>#<span class="font-bold">{tag}</span></a>))}
         </div>}
         <h1 class="list">{title}</h1>
         <p class="date">{formatDate(date)}</p>
     </div>
     <br>
-    <div class="prose text-justify pr-5">
+    <div class="prose text-justify ">
         <slot/>
     </div>
     
@@ -51,6 +51,13 @@ const { title , date , draft ,tags}=Astro.props.frontmatter;
             position: relative;
             top: -1vw;
         }
+        .tag{
+            font-size: 3vw;
+        }
+        .prose{
+            font-size: 4.5vw;
+            padding-right: 5vw;
+        }
     }
     @media (min-width:400px) and (max-width:700px){
         .post{
@@ -63,6 +70,13 @@ const { title , date , draft ,tags}=Astro.props.frontmatter;
             font-size: 4vw;
             position: relative;
             top: -1vw;
+        }
+        .tag{
+            font-size: 3vw;
+        }
+        .prose{
+            font-size: 4.5vw;
+            padding-right: 5vw;
         }
     }
     @media (min-width:700px) and (max-width:950px){
@@ -77,6 +91,13 @@ const { title , date , draft ,tags}=Astro.props.frontmatter;
             position: relative;
             top: -1vw;
         }
+        .tag{
+            font-size: 3vw;
+        }
+        .prose{
+            font-size: 3.5vw;
+            padding-right: 4vw;
+        }
     }
     @media (min-width:950px) and (max-width:1023px){
         .post{
@@ -89,6 +110,13 @@ const { title , date , draft ,tags}=Astro.props.frontmatter;
             font-size: 3vw;
             position: relative;
             top: -1vw;
+        }
+        .tag{
+            font-size: 2vw;
+        }
+        .prose{
+            font-size: 2.5vw;
+            padding-right: 2vw;
         }
     }
     @media (min-width:1023px) and (max-width:1650px){
@@ -103,6 +131,13 @@ const { title , date , draft ,tags}=Astro.props.frontmatter;
             position: relative;
             top: -1vw;
         }
+        .tag{
+            font-size: 2vw;
+        }
+        .prose{
+            font-size: 2.5vw;
+            padding-right: 2vw;
+        }
     }
     @media (min-width:1650px){
         .post{
@@ -115,6 +150,13 @@ const { title , date , draft ,tags}=Astro.props.frontmatter;
             font-size: 2vw;
             position: relative;
             top: -1vw;
+        }
+        .tag{
+            font-size: 2vw;
+        }
+        .prose{
+            font-size: 2.5vw;
+            padding-right: 2vw;
         }
     }
 </style>
